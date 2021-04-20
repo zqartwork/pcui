@@ -1,0 +1,80 @@
+/*
+-----
+Font
+-----
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap');
+
+/*
+-----
+Color
+-----
+*/
+
+//灰階區域
+
+$black: hsl(0,0,0);
+$b90: hsl(0,0,10);
+$b80: hsl(0,0,20);
+$b70: hsl(0,0,30);
+$b60: hsl(0,0,40);
+$b50: hsl(0,0,50);
+$b40: hsl(0,0,60);
+$b30: hsl(0,0,70);
+$b20: hsl(0,0,80);
+$b10: hsl(0,0,90);
+$b5: hsl(0,0,95);
+$white: rgba(255,255,255,100%);
+
+//透明度區域
+
+$b-o80: rgba(0,0,0,.8);
+$b-o60: rgba(0,0,0,.6);
+$b-o40: rgba(0,0,0,.4);
+$b-o20: rgba(0,0,0,.2);
+$w-o80: rgba(255,255,255,.8);
+$w-o60: rgba(255,255,255,.6);
+$w-o40: rgba(255,255,255,.4);
+$w-o20: rgba(255,255,255,.2);
+$trans: rgba(0,0,0,0);
+
+//主顏色區域
+
+$primary-light4: #FFE7C5;
+$primary-light3: #FFD59A;
+$primary-light2: #F4BA68;
+$primary-light1: #E1A249;
+$primary: #D68F2C;
+$primary-dark1:#C67E1A;
+$primary-dark2:#AC6E18;
+$primary-dark3:#885611;
+$primary-dark4:#71460A;
+
+//副顏色區域
+
+$red: rgb(222, 27, 27);
+$blue: #2C73D6;
+$green: #289E82;
+$purple: #8842E1;
+$pink: #E83D7A;
+
+
+/*
+-----
+Extend
+-----
+*/
+
+%hidden {
+    overflow: hidden;
+    object-position: center;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+.inner-wrapper {
+    display: flex;
+}
