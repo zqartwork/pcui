@@ -1,5 +1,99 @@
 /*
 -----
+Preset
+-----
+*/
+a, a:active, a:focus, a:visited {
+    display: inline-flex;
+    color: $b50;
+    text-decoration: none;
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 4.8rem;
+    color: $primary;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+.with-sider {
+    padding-left: 32rem;
+}
+
+.inner-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.divi-wide {
+    height: 1px;
+    width: 100%;
+    background-color: $b-o10;
+    margin: 2rem 0;
+}
+
+.container {
+    width: calc(100% - 3rem);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.txt-primary {
+    color: $primary !important;
+}
+.txt-center {
+    text-align: center;
+}
+.txt-left {
+    text-align: left;
+}
+.txt-right {
+    text-align: right;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.jc-ct {
+    justify-content: center;
+}
+.jc-fs {
+    justify-content: flex-start;
+}
+.jc-fe {
+    justify-content: flex-end;
+}
+.ai-ct {
+    align-items: center;
+}
+.ai-fs {
+    align-items: flex-start;
+}
+.ai-fe {
+    align-items: flex-end;
+}
+
+main {
+    padding: 3.2rem 0;
+}
+
+/*
+-----
 Side-Nav
 -----
 */
@@ -11,8 +105,173 @@ nav {
     height: 100vh;
     max-height: 100vh;
     overflow: default;
+    z-index: 100;
+}
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.nav-header {
+    width: 100%;
+    .inner-wrapper {
+        flex-direction: column;
+    }
+}
+.nav-logo-thumb {
+    padding: 5rem 0 2rem 0;
 }
 
-.nav-header {
-    
+.nav-logo-title {
+    color: $primary;
+    font-weight: 700;
+}
+
+.search-bar-wrapper {
+    display: inline-flex;
+    margin: 2rem 0;
+}
+.search-icon {
+    position: absolute;
+    right: 0;
+    bottom: .7rem;
+    color: $b20;
+    transition: .2s;
+    z-index: 0;
+}
+.search-title {
+    position:absolute;
+    color: $b20;
+    transition: .2s;
+    left: 0;
+    bottom: .5rem;
+    z-index: 0;
+}
+.shrinking-placeholder {
+    border: none;
+    background-color: $trans;
+    border-bottom: 1px solid $b20;
+    outline: none;
+    transition: .2s;
+    z-index: 1;
+    &:focus {
+        border-bottom: 1px solid $primary;
+        padding: .5rem 0;
+        transition: .2s;
+        & + .search-icon {
+            font-size: 18px;
+            color: $primary;
+        }
+        & + .search-title {
+            font-size: 1rem;
+            top: -1.2rem;
+        }
+    }
+}
+.nav-item {
+    width: 100%;
+    padding: 1.6rem 0;
+    padding-left: 3.6rem;
+    color: $b50;
+    cursor: pointer;
+    font-weight: 600;
+    &:hover {
+        background-color: $b5;
+    }
+}
+.collapsible-list {
+    display: none;
+    .nav-item {
+        font-weight: 400;
+        span {
+            padding-left: 3.2rem;
+        }
+    }
+}
+a.primary-btn {
+    background-color: $primary;
+    color: $white;
+    padding: 1.4rem 3.2rem;
+    font-size: 1.4rem;
+    transition: .2s;
+
+    &:active, &:focus, &:visited {
+        color: $white;
+    }
+    &:hover {
+        background-color: $primary-light1;
+    }
+
+    &.xl {
+        padding: 2rem 4.8rem;
+    }
+    &.sm {
+        padding: 1rem 2rem;
+    }
+}
+.at-title {
+    color: $b50;
+    margin-right: 1rem;
+}
+.feature-icon {
+    display: inline-flex;
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 2rem;
+    svg {
+        fill: $primary;
+    }
+}
+.feature-item {
+    width: calc(100% / 3);
+    font-size: 1.6rem;
+    max-width: 280px;
+    &:nth-child(2) {
+        margin: 0 5rem;
+    }
+}
+.feature-title {
+    margin: 2rem 0;
+}
+footer {
+    background-color: $b10;
+    padding: 5rem 0;
+}
+.footer-item {
+    width: calc(100% / 3);
+    max-width: 280px;
+    &:nth-child(2) {
+        margin: 0 5rem;
+    }
+}
+.footer-item-txt {
+    display: -webkit-box;
+    margin: 2rem 0;
+    min-height: 7rem;
+    max-height: 7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.circle {
+    @extend %hidden;
+    border-radius: 50%;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+    }
+}
+.section-title {
+    width: 100%;
+    margin-bottom: 3.2rem;
 }

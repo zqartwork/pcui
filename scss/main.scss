@@ -5,16 +5,19 @@ html, body, * {
     position: relative;
     font-size: 10px;
     line-height: 1.6;
+    font-family: $font;
 }
 
 body {
     min-height: 100vh;
     width: 100%;
     height: 100%;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     background-color: $b5;
 }
 
 @import "style";
+@import "index";
+@import "about";
 @import "rwd";
 

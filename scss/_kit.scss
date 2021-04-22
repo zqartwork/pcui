@@ -6,6 +6,8 @@ Font
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap');
 
+$font: 'Noto Sans SC', 'Sans-serif';
+
 /*
 -----
 Color
@@ -33,6 +35,7 @@ $b-o80: rgba(0,0,0,.8);
 $b-o60: rgba(0,0,0,.6);
 $b-o40: rgba(0,0,0,.4);
 $b-o20: rgba(0,0,0,.2);
+$b-o10: rgba(0,0,0,.1);
 $w-o80: rgba(255,255,255,.8);
 $w-o60: rgba(255,255,255,.6);
 $w-o40: rgba(255,255,255,.4);
@@ -73,8 +76,4 @@ Extend
     -moz-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
-}
-
-.inner-wrapper {
-    display: flex;
 }
