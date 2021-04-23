@@ -34,7 +34,9 @@ h4 {
 .with-sider {
     padding-left: 32rem;
 }
-
+.wrapper {
+    margin: 3.2rem 0;
+}
 .inner-wrapper {
     display: flex;
     width: 100%;
@@ -46,7 +48,7 @@ h4 {
     height: 1px;
     width: 100%;
     background-color: $b-o10;
-    margin: 2rem 0;
+    margin: 3.2rem 0;
 }
 
 .container {
@@ -89,9 +91,25 @@ h4 {
 }
 
 main {
-    padding: 3.2rem 0;
+    padding: 5rem 0;
+    min-height: calc(100vh - 298px);
 }
 
+ul.disc {
+    padding-left: 1.6rem;
+    list-style: disc;
+}
+ol.decimal {
+    padding-left: 1.6rem;
+    list-style: decimal;
+}
+ol.ur {
+    padding-left: 1.6rem;
+    list-style: upper-roman;
+}
+.em {
+    font-weight: 600;
+}
 /*
 -----
 Side-Nav
@@ -274,4 +292,20 @@ footer {
 .section-title {
     width: 100%;
     margin-bottom: 3.2rem;
+}
+.copy-txt {
+    display: none;
+}
+.copy-btn-style {
+    font-size: 24px;
+    color: $primary;
+    transition: .2s;
+
+    &:active, &:focus, &:visited {
+        color: $primary;
+    }
+
+    &:hover {
+        color: $primary-light1;
+    }
 }

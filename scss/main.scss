@@ -16,7 +16,12 @@ body {
     background-color: $b5;
 }
 
+* {
+    font-size: 1.4rem;
+}
+
 @import "style";
+@import "code-prettify";
 @import "index";
 @import "about";
 @import "rwd";

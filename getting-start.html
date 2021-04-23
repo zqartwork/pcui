@@ -25,52 +25,51 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 <!-- main-style -->
+<link rel="stylesheet" href="css/prism.css">
 <link rel="stylesheet" href="css/main.css">
 <body>
     <div id=”app”>
         <div class=”wrapper”>
             <script src="js/nav.js"></script>
-            <main class="with-sider intro">
+            <main class="with-sider getting-start">
                 <section class="" id="pjTitle">
                     <div class="container">
-                        <h1 class="index-title">關於此專案</h1>
+                        <h1 class="index-title">開始使用說明書</h1>
                         <h4 class="intro-title">
-                            <span>這是一個常用網站物件的測試網站，歡迎來到雲端使用者介面專案</span>
+                            <span>請詳閱以下介紹與脈絡，並且結合你平常的使用習慣中。</span>
                         </h4>
-                        <a href="getting-start.html" class="primary-btn xl"><span>立即開始</span></a>
                     </div>
                 </section>
                 <div class="divi-wide"></div>
-                <section id="commitLine">
+                <section id="cdn">
                     <div class="container">
-                        <div class="inner-wrapper jc-sb">
-                            <div>
-                                <span class="at-title">Last Commit on GitHub: </span>
-                                <a href="https://github.com/zqartwork/pcui/commit/1b6fd551da76ef130cc96ba40316d4d88ec744f0" target="_blank" class="txt-primary">1b6fd551da76ef130cc96ba40316d4d88ec744f0</a>
-                            </div>
-                            <a href="https://github.com/zqartwork/pcui" target="_blank" class="primary-btn sm"><span>GitHub</span></a>
+                        <div class="wrapper">
+                            <h2 class="section-title txt-primary">下載或使用CDN說明</h2>
+                            <ul>
+                                <li> <span class="txt-primary">下載：</span> 本地端開發時，為了避免網路問題而造成顯示問題，會使用下載的方式將套件下載並且放入專案資料夾中。缺點是第一次載入時間較長，但是之後載入速度幾乎接近0秒。</li>
+                                <li> <span class="txt-primary">CDN：</span> 節省下載資源，進入Production之後可以有效減少流量以及使用者第一次載入時間，之後載入時間相當。現階段企業廣用此方式載入套件。</li>
+                            </ul>
                         </div>
-                    </div>
-                </section>
-                <div class="divi-wide"></div>
-                <section id="developer">
-                    <div class="container">
-                        <div class="section-title">
-                            <h1 class="txt-primary">開發者</h1>
-                        </div>
-                        <div class="inner-wrapper jc-fs">
-                            <div class="dev-pic-thumb">
-                                <div class="circle">
-                                    <img src="https://scontent.ftpe11-2.fna.fbcdn.net/v/t1.6435-9/160905945_122674496534356_1782959066099768853_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=8YvjeBvmhtkAX8lFBpF&_nc_ht=scontent.ftpe11-2.fna&oh=ac616159e3b2ef3cdc8fcee2fe4a686a&oe=60A8C8B7" alt="">
-                                </div>
-                            </div>
-                            <div class="dev-description">
-                                <h3 class="dev-name">餅乾</h3>
-                                <div class="dev-intro">
-                                    我是 跨領域設計師 / 前端工程師 <br>
-                                    專精設計網頁、APP，以及2D插畫。
-                                </div>
-                            </div>
+                        <div class="divi-wide"></div>
+                        <div class="wrapper">
+                            <h2 class="section-title txt-primary">常用外接套件</h2>
+                            <ol class="decimal">
+                                <li>
+                                    <h4 class="em">meyer-reset.css 梅爾重置</h4>
+                                    <p>用以去除基礎style，減少每次設定系統style的功夫。</p>
+                                    <div class="pre jc-sb ai-ct">
+                                        <code class="language-css">
+                                            <script type="text/plain" class="language-markup">
+                                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+                                            </script>
+                                        </code>
+                                    </div>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
                         </div>
                     </div>
                 </section>
@@ -82,6 +81,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 <!-- FontAwesome -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
 <!-- wow.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <!-- owlCarousel2 -->
@@ -89,6 +89,7 @@
 <!-- vue.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
 <!-- custom.js -->
+<script src="js/prism.js"></script>
 <script src="js/custom.js"></script>
 <!-- JQ 掛載點 -->
 <script>
