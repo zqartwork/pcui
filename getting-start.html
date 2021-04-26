@@ -25,8 +25,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 <!-- main-style -->
-<link rel="stylesheet" href="css/prism.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/prism.css">
+<script src="js/prism.js"></script>
 <body>
     <div id="app">
         <div class="wrapper">
@@ -41,72 +42,118 @@
                     </div>
                 </section>
                 <div class="divi-wide"></div>
-                <section id="cdn">
-                    <div class="container">
-                        <div class="wrapper">
-                            <h2 class="section-title txt-primary">下載或使用CDN說明</h2>
-                            <ul>
-                                <li> <span class="txt-primary">下載：</span> 本地端開發時，為了避免網路問題而造成顯示問題，會使用下載的方式將套件下載並且放入專案資料夾中。缺點是第一次載入時間較長，但是之後載入速度幾乎接近0秒。</li>
-                                <li> <span class="txt-primary">CDN：</span> 節省下載資源，進入Production之後可以有效減少流量以及使用者第一次載入時間，之後載入時間相當。現階段企業廣用此方式載入套件。</li>
-                            </ul>
-                        </div>
-                        <div class="divi-wide"></div>
-                        <div class="wrapper">
-                            <h2 class="section-title txt-primary">常用外接套件</h2>
-                            <ol class="decimal">
-                                <li class="plugin-list-item">
-                                    <h4 class="em">meyer-reset.css 梅爾重置</h4>
-                                    <p>用以去除基礎style，減少每次設定系統style的功夫。</p>
-                                    <div class="pre jc-sb ai-ct">
-                                        <code class="language-css">
-                                            <script type="text/plain" class="language-markup">
-                                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
-                                            </script>
-                                        </code>
-                                    </div>
-                                </li>
-                                <li class="plugin-list-item">
-                                    <h4 class="em">animate.css + wow.js 滾輪進場動畫</h4>
-                                    <p>簡易 Scroll Animation，網站常用一次性進場動畫。</p>
-                                    <p>安裝文件以及使用辦法：<a href="https://wowjs.uk/docs.html" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>https://wowjs.uk/docs.html</span></a></p>
-                                </li>
-                                <li class="plugin-list-item">
-                                    <h4 class="em">OwlCarousel 貓頭鷹輪播套件</h4>
-                                    <p>輕量級輪播套件，RWD、跨瀏覽器以及手勢滑動，Codepen 上也有很多改寫 Source 分享。</p>
-                                    <p>安裝文件以及使用辦法：<a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>https://owlcarousel2.github.io/OwlCarousel2/</span></a></p>
-                                </li>
-                                <li class="plugin-list-item">
-                                    <h4 class="em">FontAwesome.js 免費開源圖示庫</h4>
-                                    <p>此資源提供 Source Code, svg 圖檔，現今常用軟體縮圖 icon 也有提供。</p>
-                                    <div class="pre jc-sb ai-ct">
-                                        <code class="language-css">
-                                            <script type="text/plain" class="language-markup">
-                                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-                                            </script>
-                                        </code>
-                                    </div>
-                                    <p>圖示搜尋表：<a href="https://fontawesome.com/icons?d=gallery&p=2" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>https://fontawesome.com/icons?d=gallery&p=2</span></a></p>
-                                </li>
-                                <li class="plugin-list-item">
-                                    <h4 class="em">Visual Studio Code Extension - 推薦擴充插件</h4>
-                                    <div class="rec-ext-app-item-wrapper">
-                                        <a v-for="appCard in appCards" :href="appCard.appLink" target="_blank" class="rec-ext-app-item simple-card-item col5 col10-sm">
-                                            <div class="rec-ext-app-img simple-card-img col4">
-                                                <img :src="appCard.appImg" alt="">
-                                            </div>
-                                            <div class="rec-ext-app-body simple-card-body col6">
-                                                <div class="rec-ext-app-name simple-card-name">{{appCard.appName}}</div>
-                                                <div class="rec-ext-app-txt simple-card-txt">
-                                                    {{appCard.appTxt}}
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ol>
+                <div class="content">
+                    <div class="scrollspy scrollspy-theme">
+                        <div class="scrollspy-item-wrapper">
+                            <a href="#cdn" class="scroll-spy-nav-item anchor" data-scroll="cdn"><span>CDN 與 Local</span></a>
+                            <a href="#preset" class="scroll-spy-nav-item anchor" data-scroll="preset"><span>Setup 架構</span></a>
                         </div>
                     </div>
-                </section>
+                    <section id="cdn">
+                        <div class="container">
+                            <div class="wrapper">
+                                <h2 class="section-title txt-primary">下載或使用CDN說明</h2>
+                                <ul>
+                                    <li> <span class="txt-primary">下載：</span> 本地端開發時，為了避免網路問題而造成顯示問題，會使用下載的方式將套件下載並且放入專案資料夾中。缺點是第一次載入時間較長，但是之後載入速度幾乎接近0秒。</li>
+                                    <li> <span class="txt-primary">CDN：</span> 節省下載資源，進入Production之後可以有效減少流量以及使用者第一次載入時間，之後載入時間相當。現階段企業廣用此方式載入套件。</li>
+                                </ul>
+                            </div>
+                            <div class="divi-wide"></div>
+                            <div class="wrapper">
+                                <h2 class="section-title txt-primary">常用外接套件</h2>
+                                <ol class="decimal">
+                                    <li class="plugin-list-item">
+                                        <h4 class="em">meyer-reset.css 梅爾重置</h4>
+                                        <p>用以去除基礎style，減少每次設定系統style的功夫。</p>
+                                        <div class="pre jc-sb ai-ct">
+
+<!-- code start -->
+<pre>
+<code class="language-html"><script type="text/plain" class="language-markup"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" 
+integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" 
+crossorigin="anonymous" /></script></code>
+</pre>
+<!-- code start -->
+                                        </div>
+                                    </li>
+                                    <li class="plugin-list-item">
+                                        <h4 class="em">animate.css + wow.js 滾輪進場動畫</h4>
+                                        <p>簡易 Scroll Animation，網站常用一次性進場動畫。</p>
+                                        <p>安裝文件以及使用辦法：<a href="https://wowjs.uk/docs.html" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>https://wowjs.uk/docs.html</span></a></p>
+                                    </li>
+                                    <li class="plugin-list-item">
+                                        <h4 class="em">OwlCarousel 貓頭鷹輪播套件</h4>
+                                        <p>輕量級輪播套件，RWD、跨瀏覽器以及手勢滑動，Codepen 上也有很多改寫 Source 分享。</p>
+                                        <p>安裝文件以及使用辦法：<a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>https://owlcarousel2.github.io/OwlCarousel2/</span></a></p>
+                                    </li>
+                                    <li class="plugin-list-item">
+                                        <h4 class="em">FontAwesome.js 免費開源圖示庫</h4>
+                                        <p>此資源提供 Source Code, svg 圖檔，現今常用軟體縮圖 icon 也有提供。</p>
+                                        <div class="pre">
+<!-- code start -->
+<pre>
+<code class="language-html"><script type="text/plain" class="language-markup"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+crossorigin="anonymous" /></script></code>
+</pre>
+<!-- code start -->
+                                        </div>
+                                        <p>圖示搜尋表：<a href="https://fontawesome.com/icons?d=gallery&p=2" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>https://fontawesome.com/icons?d=gallery&p=2</span></a></p>
+                                    </li>
+                                    <li class="plugin-list-item">
+                                        <h4 class="em">Visual Studio Code Extension - 推薦擴充插件</h4>
+                                        <div class="rec-ext-app-item-wrapper">
+                                            <a v-for="appCard in appCards" :href="appCard.appLink" target="_blank" class="rec-ext-app-item simple-card-item col5 col10-sm">
+                                                <div class="rec-ext-app-img simple-card-img col4">
+                                                    <img :src="appCard.appImg" alt="">
+                                                </div>
+                                                <div class="rec-ext-app-body simple-card-body col6">
+                                                    <div class="rec-ext-app-name simple-card-name">{{appCard.appName}}</div>
+                                                    <div class="rec-ext-app-txt simple-card-txt">
+                                                        {{appCard.appTxt}}
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="preset">
+                        <div class="container">
+                            <h2 class="section-title txt-primary">Setup 架構</h2>
+                            <p>Before we start to styling our website, preset some common rules. ( Customize and Suggestion )</p>
+                            <p>在我們開始裝飾網站前，請先把規則訂好，輸入你的UI規則並且這邊會給您一些建議。這是我個人習慣的架構，可視情況做個人調整。</p>
+                            <div class="pre jc-sb ai-ct">
+<pre>
+<code class="language-javascript">
+    MyWebsiteName/
+    |--css/
+    |  |--main.css // 主要compile出來的檔案
+    |
+    |--js/
+    |  |--custom.js // Function Library 掛載在檔案的最下方，確保Loading得到
+    |
+    |--img/ // 推薦CDN化 - 後續會有補充 PicGo 免費圖床上載
+    |  |--type/
+    |
+    |--scss/
+    |  |--_pageName.scss // 非通用獨立專案的 scss，方便往後可以拔乾淨
+    |  |--_kit.scss // UI KIT Library 以及 預寫的 extend, mixin 物件
+    |  |--_style.scss // 全站通用的 Style
+    |  |--_rwd.scss // 全站通用的 RWD
+    |  |--main.scss // Import compile 主要檔案
+    |
+    |--index.html
+    |--pageName.html
+    |--pageName.html
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </main>
             <script src="js/footer.js"></script>
         </div>
@@ -123,8 +170,6 @@
 <!-- vue.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
 <!-- custom.js -->
-<script src="js/prism.js"></script>
-<script src="js/custom.js"></script>
 <!-- JQ 掛載點 -->
 <script>
     $(document).ready(function() {});
@@ -185,6 +230,9 @@
             ]
         },
         method:"",
+        mounted() {
+        },  
     })
 </script>
+<script src="js/custom.js"></script>
 </body>
