@@ -90,6 +90,37 @@ h4 {
     align-items: flex-end;
 }
 
+.col1{
+    width: calc(100% / 10 * 1 - 0);
+}
+.col2{
+    width: calc(100% / 10 * 2 - 1.5rem * 3 / 2);
+}
+.col3{
+    width: calc(100% / 10 * 3 - 1.5rem * 4 / 3);
+}
+.col4{
+    width: calc(100% / 10 * 4 - 1.5rem * 5 / 4);
+}
+.col5{
+    width: calc(100% / 10 * 5 - 1.5rem * 6 / 5);
+}
+.col6{
+    width: calc(100% / 10 * 6 - 1.5rem * 7 / 6);
+}
+.col7{
+    width: calc(100% / 10 * 7 - 1.5rem * 8 / 7);
+}
+.col8{
+    width: calc(100% / 10 * 8 - 1.5rem * 9 / 8);
+}
+.col9{
+    width: calc(100% / 10 * 9 - 1.5rem * 10 / 9);
+}
+.col10{
+    width: calc(100% / 10 * 10 - 1.5rem * 11 / 10);
+}
+
 main {
     padding: 5rem 0;
     min-height: calc(100vh - 298px);
@@ -193,7 +224,7 @@ nav {
     color: $b50;
     cursor: pointer;
     font-weight: 600;
-    &:hover {
+    &:hover, &.active {
         background-color: $b5;
     }
 }
@@ -293,19 +324,31 @@ footer {
     width: 100%;
     margin-bottom: 3.2rem;
 }
-.copy-txt {
-    display: none;
+.pre {
+    margin: 1rem 0;
 }
-.copy-btn-style {
-    font-size: 24px;
-    color: $primary;
-    transition: .2s;
-
-    &:active, &:focus, &:visited {
-        color: $primary;
+/*
+-----
+Simple Card Item
+-----
+*/
+.simple-card-item {
+    display: flex;
+    background-color: $white;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+.simple-card-img {
+    max-width: 100px;
+    margin-right: 1rem;
+    img {
+        width: 100%;
     }
-
-    &:hover {
-        color: $primary-light1;
-    }
+}
+.simple-card-name {
+    font-weight: 600;
+}
+.simple-card-body {
+    color: $black;
 }

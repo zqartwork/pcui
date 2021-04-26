@@ -28,8 +28,8 @@
 <link rel="stylesheet" href="css/prism.css">
 <link rel="stylesheet" href="css/main.css">
 <body>
-    <div id=”app”>
-        <div class=”wrapper”>
+    <div id="app">
+        <div class="wrapper">
             <script src="js/nav.js"></script>
             <main class="with-sider getting-start">
                 <section class="" id="pjTitle">
@@ -54,7 +54,7 @@
                         <div class="wrapper">
                             <h2 class="section-title txt-primary">常用外接套件</h2>
                             <ol class="decimal">
-                                <li>
+                                <li class="plugin-list-item">
                                     <h4 class="em">meyer-reset.css 梅爾重置</h4>
                                     <p>用以去除基礎style，減少每次設定系統style的功夫。</p>
                                     <div class="pre jc-sb ai-ct">
@@ -65,10 +65,44 @@
                                         </code>
                                     </div>
                                 </li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li class="plugin-list-item">
+                                    <h4 class="em">animate.css + wow.js 滾輪進場動畫</h4>
+                                    <p>簡易 Scroll Animation，網站常用一次性進場動畫。</p>
+                                    <p>安裝文件以及使用辦法：<a href="https://wowjs.uk/docs.html" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>https://wowjs.uk/docs.html</span></a></p>
+                                </li>
+                                <li class="plugin-list-item">
+                                    <h4 class="em">OwlCarousel 貓頭鷹輪播套件</h4>
+                                    <p>輕量級輪播套件，RWD、跨瀏覽器以及手勢滑動，Codepen 上也有很多改寫 Source 分享。</p>
+                                    <p>安裝文件以及使用辦法：<a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>https://owlcarousel2.github.io/OwlCarousel2/</span></a></p>
+                                </li>
+                                <li class="plugin-list-item">
+                                    <h4 class="em">FontAwesome.js 免費開源圖示庫</h4>
+                                    <p>此資源提供 Source Code, svg 圖檔，現今常用軟體縮圖 icon 也有提供。</p>
+                                    <div class="pre jc-sb ai-ct">
+                                        <code class="language-css">
+                                            <script type="text/plain" class="language-markup">
+                                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+                                            </script>
+                                        </code>
+                                    </div>
+                                    <p>圖示搜尋表：<a href="https://fontawesome.com/icons?d=gallery&p=2" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>https://fontawesome.com/icons?d=gallery&p=2</span></a></p>
+                                </li>
+                                <li class="plugin-list-item">
+                                    <h4 class="em">Visual Studio Code Extension - 推薦擴充插件</h4>
+                                    <div class="rec-ext-app-item-wrapper">
+                                        <a v-for="appCard in appCards" :href="appCard.appLink" target="_blank" class="rec-ext-app-item simple-card-item col5 col10-sm">
+                                            <div class="rec-ext-app-img simple-card-img col4">
+                                                <img :src="appCard.appImg" alt="">
+                                            </div>
+                                            <div class="rec-ext-app-body simple-card-body col6">
+                                                <div class="rec-ext-app-name simple-card-name">{{appCard.appName}}</div>
+                                                <div class="rec-ext-app-txt simple-card-txt">
+                                                    {{appCard.appTxt}}
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
                             </ol>
                         </div>
                     </div>
@@ -97,8 +131,59 @@
 </script>
 <script>
     new Vue({
-        el:"",
-        data:"",
+        el:"#app",
+        data:{
+            appCards: [
+                {
+                    appImg: 'https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/liveserver.png',
+                    appName: 'Live Server',
+                    appTxt: '建立本地端開發用伺服器，http://127.0.0.1:5501/，相同網域的用戶可以看到彼此電腦的測試機。',
+                    appLink: 'https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer'
+                },
+                {
+                    appImg: 'https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/live-sass.png',
+                    appName: 'Live Sass Compiler',
+                    appTxt: '可以 Compile scss 並且使用 settings.json 調整編譯後的 code 新建 css/ 並且丟進去。',
+                    appLink: 'https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass'
+                },
+                {
+                    appImg: 'https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/jquery-snippet.png',
+                    appName: 'jQuery Code Snippets',
+                    appTxt: '提示工具。',
+                    appLink: 'https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass'
+                },
+                {
+                    appImg: 'https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/html5-snippet.png',
+                    appName: 'HTML Snippets',
+                    appTxt: '提示工具。',
+                    appLink: 'https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets'
+                },
+                {
+                    appImg: 'https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/git-lens.png',
+                    appName: 'GitLens — Git supercharged',
+                    appTxt: '下載 git 後，他會自動連動 git 版本紀錄，並且可以在行後看到上次修改的commit與時間，抓戰犯工具。',
+                    appLink: 'https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens'
+                },
+                {
+                    appImg: 'https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/git-history.png',
+                    appName: 'Git History',
+                    appTxt: '可以挑選時間 reverse 版本，可以清楚看到紀錄。',
+                    appLink: 'https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory'
+                },
+                {
+                    appImg: 'https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/js-snippet.png',
+                    appName: 'JavaScript (ES6) code snippets',
+                    appTxt: '提示工具。',
+                    appLink: 'https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets'
+                },
+                {
+                    appImg: 'https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/css3-snippet.png',
+                    appName: 'HTML CSS Support',
+                    appTxt: 'CSS Intellisense for HTML',
+                    appLink: 'https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css'
+                },
+            ]
+        },
         method:"",
     })
 </script>

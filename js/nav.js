@@ -1,4 +1,4 @@
-document.write( '<nav id=”navbar” class=\"side-nav\">\n' );
+document.write( '<nav id="navbar" class=\"side-nav\">\n' );
 document.write( '                    <div class=\"nav-wrapper\">\n' );
 document.write( '                        <div class=\"nav-header\">\n' );
 document.write( '                            <div class=\"inner-wrapper\">\n' );
