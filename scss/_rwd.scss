@@ -2,4 +2,30 @@
     .col10-sm {
         width: 100%
     }
+    .side-nav {
+        left: -100%;
+        transition: .2s;
+        opacity: 0;
+    }
+    .with-sider {
+        padding-left: 2rem;
+        transition: .2s;
+    }
+    .inner-wrapper {
+        flex-wrap: wrap;
+    }
+    .footer-item,.footer-item:nth-child(2) {
+        width: 100%;
+        margin: 2rem 0;
+        padding: 0;
+    }
+    .wrapper {
+        margin: 0;
+    }
+    .ham {
+        display: block;
+    }
+    .scrollspy-item-wrapper {
+        display: none;
+    }
 }

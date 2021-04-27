@@ -77,3 +77,8 @@ document.write( '                        </div>\n' );
 document.write( '                        <div class=\"nav-footer\"></div>\n' );
 document.write( '                    </div>\n' );
 document.write( '                </nav>' );
+document.write( '<div class=\"side-nav-closer side-nav-mask\"></div>\n' );
+document.write( '            <a href=\"#!\" class=\"ham side-nav-opener\">\n' );
+document.write( '                <img src=\"https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/ham.png\" alt=\"\">\n' );
+document.write( '            </a>' );
+

@@ -24,6 +24,7 @@ let sideNavActive = function(){
     var length = url.length;
     console.log(length)
     path = url[length - 1];
+    var ham = $('.side-nav-opener');
 
     /* Get URL For Setting Active Nav List Item */
     $('.nav-item-wrapper').find('.nav-item').each(function(){
@@ -33,6 +34,18 @@ let sideNavActive = function(){
             $(this).addClass('active');
             $(this).parent('.collapsible-list').show();
         }
+    })
+
+    ham.click(function(){
+      $('.side-nav').toggleClass('active');
+      $('.side-nav-mask').toggleClass('active');
+      $('body').toggleClass('lock');
+    })
+
+    $('.side-nav-closer').click(function(){
+      $('.side-nav').removeClass('active');
+      $('.side-nav-mask').removeClass('active');
+      $('body').removeClass('lock');
     })
 
 }

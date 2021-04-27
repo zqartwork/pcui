@@ -92,7 +92,7 @@ crossorigin="anonymous" /></script></code>
                                         <div class="pre">
 <!-- code start -->
 <pre>
-<code class="language-html"><script type="text/plain" class="language-markup"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+<code class="language-html"><script type="text/plain" class="language-html"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
 integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
 crossorigin="anonymous" /></script></code>
 </pre>
@@ -148,6 +148,77 @@ crossorigin="anonymous" /></script></code>
     |--index.html
     |--pageName.html
     |--pageName.html
+</code>
+</pre>
+                            </div>
+                            <p>main.scss 內部設定：( 對 scss 不熟悉的朋友可以前往： <a href="https://medium.com/@bebebobohaha/sass%E5%85%A5%E9%96%80-%E4%BB%8B%E7%B4%B9-%E8%A8%AD%E5%AE%9A-2305f3914c22" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>【SASS全秘笈】</span></a> ) 以下是我固定的全站設定。</p>
+                            <div class="pre jc-sb ai-ct">
+<pre>
+<code class="language-css">
+    @import "kit"; /*越下方層級越高*/
+
+    /*全站基本設定*/
+    html, body, * {
+        box-sizing: border-box;
+        font-family: $font;
+        position: relative;
+        cursor: default;
+        line-height: 1.5;
+    }
+
+    body {
+        font-size: 10px;
+        min-height: 100vh; //Sticky Footer
+    }
+
+    @import "style";
+    @import "rwd";
+    @import "singlepage";
+</code>
+</pre>
+                            </div>
+                            <p>_kit.scss 內部設定：字體可以外部掛載或者 Local 掛載，後者建議轉 CDN 外部掛載，避免 IE 死去。缺點是會比較慢 Loading 進網站，建議使用 Loader 阻擋一下第一次載入破字； <br>
+                                此份 scss 主要用來將 Figma 或 UI 設計軟體上 Library 的 Asset 輸入，方便之後撰寫取用，component style 也可以預先寫好變成 mixin!</p>
+<div class="pre jc-sb ai-ct">
+<pre>
+<code class="language-css">
+    /*
+    ----------------
+    Font Download ( 此處使用 Google Font 外部掛載 )
+    ----------------
+    */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto&display=swap');
+
+    /*
+    ----------------
+    UI Kit Presets
+    ----------------
+    */
+
+    $font: 'Noto Sans TC', 'Roboto';
+
+    /*
+    ----------------
+    Main Color Set
+    ----------------
+    */
+
+    $color: #ABCDEF;
+
+    /*
+    ----------------
+    Extend Mixin Items
+    ----------------
+    */
+
+    %hidden {
+        overflow: hidden;
+        object-position: center;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+    }
 </code>
 </pre>
                             </div>
