@@ -43,18 +43,18 @@ pre > code[class*="language-"] {
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
-	background: #e6e6e6;
+	background: #c0c0c0;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	text-shadow: none;
-	background: #e6e6e6;
+	background: #c0c0c0;
 }
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
+	padding: 2em;
 	margin: .5em 0;
 	overflow: auto;
 }
