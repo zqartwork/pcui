@@ -21,7 +21,9 @@ SideNav Active
 let sideNavActive = function(){
     var url = window.location.pathname.split( '/' );
     console.log(url);
-    path = url[1];
+    var length = url.length;
+    console.log(length)
+    path = url[length - 1];
 
     /* Get URL For Setting Active Nav List Item */
     $('.nav-item-wrapper').find('.nav-item').each(function(){
