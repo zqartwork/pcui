@@ -24,12 +24,23 @@
 <!-- owl-default-theme -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- prism.js -->
+<link rel="stylesheet" href="css/prism.css">
+<script src="js/prism.js"></script>
+
 <!-- main-style -->
 <link rel="stylesheet" href="css/main.css">
 <body>
     <div id="app">
         <div class="wrapper">
             <script src="js/nav.js"></script>
+            <div class="scrollspy scrollspy-theme">
+                <div class="scrollspy-item-wrapper">
+                    <a href="#ctnrSys" class="scroll-spy-nav-item anchor" data-scroll="ctnrSys"><span>Container</span></a>
+                    <a href="#gridSys" class="scroll-spy-nav-item anchor" data-scroll="gridSys"><span>Grid System</span></a>
+                </div>
+            </div>
             <main class="with-sider intro">
                 <section class="" id="pjTitle">
                     <div class="container">
@@ -43,7 +54,87 @@
                 <section id="ctnrSys">
                     <div class="container">
                         <h2 class="section-title txt-primary">Container</h2>
-                        <p></p>
+                        <p>作為一個最大寬度的限制，有效將使用者視線留在最高停留的區域：1366px (22.98% - 2020 年數據)</p>
+                        <p>推薦大家閱讀一下這篇科普文章： <a href="https://www.designrush.com/trends/website-dimensions" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>【 DESIGNRUSH NEWS: Website Dimensions 】</span></a> </p>
+                        <br>
+                        <p>HTML</p>
+                        <div class="pre jc-sb ai-ct">
+<pre>
+<code class="language-html">&lt;div&gt;
+    &lt;div class="container"&gt;{{被控制寬度的內容物}}&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>                            
+                        </div>
+                        <p>SCSS / CSS</p>
+                        <div class="pre jc-ab ai-ct">
+<pre>
+<code class="language-css">
+    .container {
+        width: 100%;
+        max-width: 1366px; /*將視線集中*/
+        margin: 0 auto;
+    }
+</code>
+</pre>                            
+                        </div>
+                        <div class="demo-section">
+                            <div class="fake-nav">
+                                <span class="red fake-circle"></span>
+                                <span class="yellow fake-circle"></span>
+                                <span class="green fake-circle"></span>
+                            </div>
+                            <div class="demo-container" id="demo1">
+                                <span class="sm-brick"></span>
+                                <span class="brick"></span>
+                                <span class="brick"></span>
+                                <span class="brick"></span>
+                                <span class="brick"></span>
+                            </div>
+                        </div>
+                        <a href="#!" class="primary-btn sm class-toggler" cls-target="#demo1"><span>Container Toggle</span></a>
+                        <div class="divi-wide"></div>
+                    </div>
+                </section>
+                <section id="gridSys">
+                    <div class="container">
+                        <h2 class="section-title txt-primary">Grid System</h2>
+                        <p>快速使用 Flexbox 控制排版。</p>
+                        <div class="demo-section">
+                            <div class="row">
+                                <div class="col col1 demo-col jc-ct ai-ct">1</div>
+                                <div class="col col1 demo-col jc-ct ai-ct">2</div>
+                                <div class="col col1 demo-col jc-ct ai-ct">3</div>
+                                <div class="col col1 demo-col jc-ct ai-ct">4</div>
+                                <div class="col col1 demo-col jc-ct ai-ct">5</div>
+                                <div class="col col1 demo-col jc-ct ai-ct">6</div>
+                                <div class="col col1 demo-col jc-ct ai-ct">7</div>
+                                <div class="col col1 demo-col jc-ct ai-ct">8</div>
+                                <div class="col col1 demo-col jc-ct ai-ct">9</div>
+                                <div class="col col1 demo-col jc-ct ai-ct">10</div>
+                            </div>
+                            <div class="row">
+                                <div class="col col4 demo-col jc-ct ai-ct">4</div>
+                                <div class="col col6 demo-col jc-ct ai-ct">6</div>
+                            </div>
+                        </div>
+                        <br>
+                        <p>HTML</p>
+                        <div class="pre jc-sb ai-ct">
+<pre>
+<code class="language-html">&lt;div class="row"&gt;
+    &lt;div class="col1"&gt;&lt;/div&gt; &lt;!--col後方的數字決定%數--&gt;
+    &lt;div class="col1"&gt;&lt;/div&gt;
+    &lt;div class="col1"&gt;&lt;/div&gt;
+    &lt;div class="col1"&gt;&lt;/div&gt;
+    &lt;div class="col1"&gt;&lt;/div&gt;
+    &lt;div class="col1"&gt;&lt;/div&gt;
+    &lt;div class="col1"&gt;&lt;/div&gt;
+    &lt;div class="col1"&gt;&lt;/div&gt;
+    &lt;div class="col1"&gt;&lt;/div&gt;
+    &lt;div class="col1"&gt;&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>                            
+                        </div>
                     </div>
                 </section>
             </main>
@@ -60,17 +151,25 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <!-- vue.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
-<!-- custom.js -->
-<script src="js/custom.js"></script>
+
 <!-- JQ 掛載點 -->
 <script>
-    $(document).ready(function() {});
+    $(document).ready(function() {
+        classToggler();
+    });
 </script>
 <script>
     new Vue({
         el:"",
         data:"",
         method:"",
+        mounted() {
+            
+        },
     })
 </script>
+
+<!-- custom.js -->
+<script src="js/custom.js"></script>
+
 </body>

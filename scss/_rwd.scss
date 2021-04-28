@@ -1,4 +1,13 @@
-@media (max-width: 1024px) {
+@media(max-width: 2560px) { //XXL
+    
+}
+@media(max-width: 1920px) { //XL
+}
+@media(max-width: 1366px) { //Large
+    
+}
+@media(max-width: 1024px) { //Medium
+    
     .col10-sm {
         width: 100%
     }
@@ -28,4 +37,11 @@
     .scrollspy-item-wrapper {
         display: none;
     }
+}
+@media(max-width: 768px) { //Small
+    
+}
+@media(max-width: 500px) { //XS
+}
+@media(max-width: 375px) { //XXS
 }

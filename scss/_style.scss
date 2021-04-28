@@ -76,8 +76,14 @@ h4 {
 .txt-right {
     text-align: right;
 }
+
+/*justify-content*/
+
 .jc-sb {
     justify-content: space-between;
+}
+.jc-sa {
+    justify-content: space-around;
 }
 .jc-ct {
     justify-content: center;
@@ -88,6 +94,9 @@ h4 {
 .jc-fe {
     justify-content: flex-end;
 }
+
+/*align-item*/
+
 .ai-ct {
     align-items: center;
 }
@@ -97,36 +106,118 @@ h4 {
 .ai-fe {
     align-items: flex-end;
 }
+.ai-bl {
+    align-items: baseline;
+}
+.ai-st {
+    align-items: stretch;
+}
+
+/*align-self*/
+
+.as-ct {
+    align-self: center;
+}
+.as-fs {
+    align-self: flex-start;
+}
+.as-fe {
+    align-self: flex-end;
+}
+.as-st {
+    align-self: stretch;
+}
+.as-bl {
+    align-self: baseline;
+}
+
+/*align-content*/
+
+.ac-ct {
+    align-content: center;
+}
+
+.ac-fs {
+    align-content: flex-start;
+}
+
+.ac-fe {
+    align-content: flex-end;
+}
+
+.ac-sb {
+    align-content: space-between;
+}
+
+.ac-sa {
+    align-content: space-around;
+}
+
+.ac-st {
+    align-content: stretch;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
 
 .col1{
-    width: calc(100% / 10 * 1 - 0);
+    width: 10%;
 }
 .col2{
-    width: calc(100% / 10 * 2 - 1.5rem * 3 / 2);
+    width: 20%;
 }
 .col3{
-    width: calc(100% / 10 * 3 - 1.5rem * 4 / 3);
+    width: 30%;
 }
 .col4{
-    width: calc(100% / 10 * 4 - 1.5rem * 5 / 4);
+    width: 40%;
 }
 .col5{
-    width: calc(100% / 10 * 5 - 1.5rem * 6 / 5);
+    width: 50%;
 }
 .col6{
-    width: calc(100% / 10 * 6 - 1.5rem * 7 / 6);
+    width: 60%;
 }
 .col7{
-    width: calc(100% / 10 * 7 - 1.5rem * 8 / 7);
+    width: 70%;
 }
 .col8{
-    width: calc(100% / 10 * 8 - 1.5rem * 9 / 8);
+    width: 80%;
 }
 .col9{
-    width: calc(100% / 10 * 9 - 1.5rem * 10 / 9);
+    width: 90%;
 }
 .col10{
-    width: calc(100% / 10 * 10 - 1.5rem * 11 / 10);
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    line-height: 2;
+}
+
+th, td {
+    text-align: left;
+    padding: 1rem 2rem;
+}
+
+tr {
+
+    background-color: $trans;
+
+    &:nth-child(2n) {
+        background-color: $b-o10;
+    }
+
 }
 
 main {
@@ -287,6 +378,7 @@ a.primary-btn {
     font-size: 1.4rem;
     transition: .2s;
     margin: 1rem;
+    margin-left: 0;
 
     &:active, &:focus, &:visited {
         color: $white;
@@ -421,4 +513,10 @@ Simple Card Item
 
 .pre {
     margin: 2rem 0;
+}
+
+.demo-section {
+    background-color: $b10;  
+    padding: 2rem;
+    margin: 3.2rem 0 0 0;
 }

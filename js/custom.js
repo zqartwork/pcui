@@ -94,3 +94,17 @@ Anchor, ScrollSpy
 
 }
 scrollSpy();
+
+/*
+-----
+Class Toggler
+-----
+*/
+let classToggler = function(){
+  let classTogBtn = $('.class-toggler');
+  classTogBtn.click(function(){
+    console.log('Hi')
+    let target = $($(this).attr('cls-target'));
+    target.toggleClass('active');
+  })
+}

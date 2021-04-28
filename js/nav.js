@@ -20,7 +20,7 @@ document.write( '                                <a href=\"getting-start.html\" 
 document.write( '                                <div class=\"nav-item collapsible-opener\" sw=\"#css\"><span>CSS</span></div>\n' );
 document.write( '                                <div id=\"css\" class=\"collapsible-list\">\n' );
 document.write( '                                    <a href=\"grid.html\" class=\"nav-item\"><span>Grid</span></a>\n' );
-document.write( '                                    <a href=\"helper.html\" class=\"nav-item\"><span>Helpers</span></a>\n' );
+document.write( '                                    <a href=\"helpers.html\" class=\"nav-item\"><span>Helpers</span></a>\n' );
 document.write( '                                    <a href=\"media.html\" class=\"nav-item\"><span>Media</span></a>\n' );
 document.write( '                                    <a href=\"animation.html\" class=\"nav-item\"><span>Animation</span></a>\n' );
 document.write( '                                    <a href=\"scss.html\" class=\"nav-item\"><span>Scss</span></a>\n' );

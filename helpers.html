@@ -1,0 +1,233 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>PCUI-Useful Tool For Building Up</title>
+<!--google plus info-->
+<meta itemprop="name" content="{網頁標題}">
+<meta itemprop="image" content="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/page-img.jpg">
+<meta name="description" content="{網頁內容敘述}" />
+<!--FB info-->
+<meta property="og:title" content="{網頁標題}" />
+<meta property="og:site_name" content="[網站名稱]" />
+<meta property="og:url" content="[網頁網址_URL]">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/page-img.jpg">
+<meta property="og:description" content="{網頁內容敘述}">
+<meta property="og:type" content="website" />
+<!-- App-icon -->
+<link rel="apple-touch-icon-precomposed" href="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/apple-touch-icon-152x152.png">
+<!--Favicon-->
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/favicon.ico" type="image/x-icon" />
+<!--CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<!-- wow animate -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<!-- owl-default-theme -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- prism.js -->
+<link rel="stylesheet" href="css/prism.css">
+<script src="js/prism.js"></script>
+
+<!-- main-style -->
+<link rel="stylesheet" href="css/main.css">
+<body>
+    <div id="app">
+        <div class="wrapper">
+            <script src="js/nav.js"></script>
+            <div class="scrollspy scrollspy-theme">
+                <div class="scrollspy-item-wrapper">
+                    <a href="#itemAlign" class="scroll-spy-nav-item anchor" data-scroll="itemAlign"><span>物件對齊</span></a>
+                    <a href="#textAlign" class="scroll-spy-nav-item anchor" data-scroll="textAlign"><span>文字對齊</span></a>
+                </div>
+            </div>
+            <main class="with-sider intro">
+                <section class="" id="pjTitle">
+                    <div class="container">
+                        <h1 class="index-title">Helpers</h1>
+                        <h4 class="intro-title">
+                            <span>在搭建網站時，常用的對齊功能、排版功能以及顯示消失的簡單判斷。</span>
+                        </h4>
+                    </div>
+                </section>
+                <div class="divi-wide"></div>
+                <section id="itemAlign">
+                    <div class="container">
+                        <h2 class="txt-primary section-title">Align Items</h2>
+                        <p>對其容器中的物件，這邊延續前方的 Flexbox 專用。詳細 Flexbox 的對齊方式請參考 Flexbox 專門文件，分清楚 justify-content, align-item, align-content, align-self 的性質差異。</p>
+                        <div class="demo-section">
+                            <p>水平置中 ( justify-content: center )、垂直置中 ( align-item: center )</p>
+                            <div class="row jc-ct ai-ct">
+                                <span class="demo-content itemAlign">被定位的物件</span>
+                                <span class="demo-content itemAlign">被定位的物件</span>
+                                <span class="demo-content itemAlign">被定位的物件</span>
+                            </div>
+                        </div>
+                        <div class="pre jc-sb ai-ct">
+<pre>
+<code class="language-html">&lt;div class="row jc-ct ai-ct"&gt;
+    &lt;span&gt;被定位的物件&lt;/span&gt;
+    &lt;span&gt;被定位的物件&lt;/span&gt;
+    &lt;span&gt;被定位的物件&lt;/span&gt;
+&lt;/div&gt;</code>
+</pre>                            
+                        </div>
+                    <div class="property-list">
+                        <table>
+                            <tr>
+                                <th>ClassName</th>
+                                <th>Property</th>
+                            </tr>
+                            <tr v-for="ppItem in ppItems">
+                                <td><code class="language-css">{{ppItem.className}}</code></td>
+                                <td>{{ppItem.property}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                        <div class="divi-wide"></div>
+                    </div>
+                </section>
+                <section id="textAlign">
+                    <div class="container">
+                        <h2 class="section-title txt-primary">Text Align</h2>
+                        <p>在父層為 Block 的情況下，對齊 inline 物件以及文字的簡易方法。</p>
+                        <div class="demo-section">
+                            <p class="txt-center">--文字置中--</p>
+                            <p class="txt-left">--文字置左--</p>
+                            <p class="txt-right">--文字置右--</p>
+                        </div>
+                        <div class="pre jc-sb ai-ct">
+<pre>
+<code class="language-html">&lt;div class=""&gt;
+    &lt;p class="txt-center"&gt;--文字置中--&lt;/p&gt;
+    &lt;p class="txt-left"&gt;--文字置左--&lt;/p&gt;
+    &lt;p class="txt-right"&gt;--文字置右--&lt;/p&gt;
+&lt;/div&gt;</code>
+</pre>                            
+                        </div>
+                        <div class="property-list">
+                            <table>
+                                <tr>
+                                    <th>ClassName</th>
+                                    <th>Property</th>
+                                </tr>
+                                <tr v-for="p2Item in p2Items">
+                                    <td><code class="language-css">{{p2Item.className}}</code></td>
+                                    <td>{{p2Item.property}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <script src="js/footer.js"></script>
+        </div>
+    </div>
+<!--jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<!-- FontAwesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<!-- wow.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- owlCarousel2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- vue.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+
+<!-- JQ 掛載點 -->
+<script>
+    $(document).ready(function() {
+        classToggler();
+    });
+</script>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            ppItems: [
+                {
+                    className: '.jc-ct',
+                    property: 'justify-content: center',
+                },{
+                    className: '.jc-fs',
+                    property: 'justify-content: flex-start',
+                },{
+                    className: '.jc-fe',
+                    property: 'justify-content: flex-end',
+                },{
+                    className: '.jc-sa',
+                    property: 'justify-content: space-around',
+                },{
+                    className: '.jc-sb',
+                    property: 'justify-content: space-between',
+                },{
+                    className: '.ac-ct',
+                    property: 'align-content: center',
+                },{
+                    className: '.ac-fs',
+                    property: 'align-content: flex-start',
+                },{
+                    className: '.ac-fe',
+                    property: 'align-content: flex-end',
+                },{
+                    className: '.ac-sa',
+                    property: 'align-content: space-around',
+                },{
+                    className: '.ac-sb',
+                    property: 'align-content: space-between',
+                },{
+                    className: '.ai-ct',
+                    property: 'align-item: center',
+                },{
+                    className: '.ai-fs',
+                    property: 'align-item: flex-start',
+                },{
+                    className: '.ai-fe',
+                    property: 'align-item: flex-end',
+                },{
+                    className: '.ai-bl',
+                    property: 'align-item: baseline',
+                },{
+                    className: '.ai-st',
+                    property: 'align-item: strech',
+                },{
+                    className: '.as-ct',
+                    property: 'align-self: center',
+                },{
+                    className: '.as-fs',
+                    property: 'align-self: flex-start',
+                },{
+                    className: '.as-fe',
+                    property: 'align-self: flex-end',
+                },{
+                    className: '.as-bl',
+                    property: 'align-self: baseline',
+                },{
+                    className: '.as-st',
+                    property: 'align-self: strech',
+                },
+            ],
+            p2Items: [
+                {
+                    className: '.txt-center',
+                    property: 'text-align: center',
+                },{
+                    className: '.txt-left',
+                    property: 'text-align: left',
+                },{
+                    className: '.txt-right',
+                    property: 'text-align: right',
+                },
+            ],
+        },
+        method:"",
+        mounted() {
+            
+        },
+    })
+</script>
+
+<!-- custom.js -->
+<script src="js/custom.js"></script>
+
+</body>

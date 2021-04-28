@@ -24,10 +24,14 @@
 <!-- owl-default-theme -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-<!-- main-style -->
-<link rel="stylesheet" href="css/main.css">
+
+<!-- prism.js -->
 <link rel="stylesheet" href="css/prism.css">
 <script src="js/prism.js"></script>
+
+<!-- main-style -->
+<link rel="stylesheet" href="css/main.css">
+
 <body>
     <div id="app">
         <div class="wrapper">
@@ -103,7 +107,7 @@ crossorigin="anonymous" /></script></code>
                                     <li class="plugin-list-item">
                                         <h4 class="em">Visual Studio Code Extension - 推薦擴充插件</h4>
                                         <div class="rec-ext-app-item-wrapper">
-                                            <a v-for="appCard in appCards" :href="appCard.appLink" target="_blank" class="rec-ext-app-item simple-card-item col5 col10-sm">
+                                            <a v-for="appCard in appCards" :href="appCard.appLink" target="_blank" class="rec-ext-app-item simple-card-item col4 col10-sm">
                                                 <div class="rec-ext-app-img simple-card-img col4">
                                                     <img :src="appCard.appImg" alt="">
                                                 </div>
@@ -179,7 +183,7 @@ body {
                             </div>
                             <p>_kit.scss 內部設定：字體可以外部掛載或者 Local 掛載，後者建議轉 CDN 外部掛載，避免 IE 死去。缺點是會比較慢 Loading 進網站，建議使用 Loader 阻擋一下第一次載入破字； <br>
                                 此份 scss 主要用來將 Figma 或 UI 設計軟體上 Library 的 Asset 輸入，方便之後撰寫取用，component style 也可以預先寫好變成 mixin!</p>
-<div class="pre jc-sb ai-ct">
+                            <div class="pre jc-sb ai-ct">
 <pre>
 <code class="language-css">
 /*
@@ -222,12 +226,26 @@ Extend Mixin Items
 </code>
 </pre>
                             </div>
+                            <p>_rwd.scss 中的裝置寬度設置</p>
+                            <div class="pre jc-sb ai-ct">
+<pre>
+<code class="language-css">
+@media (min-width: 1920px) {} /*螢幕解析度 1920 以上的大型螢幕 XXL*/
+@media (max-width: 1920px) {} /*1366-1920 XL*/
+@media (max-width: 1366px) {} /*1024-1366 L*/
+@media (max-width: 1024px) {} /*768-1024 M*/
+@media (max-width: 768px) {} /*500-768 SM*/
+@media (max-width: 500px) {} /*375-500 XS*/
+@media (max-width: 375px) {} /*0-375 XXS*/
+</code>
+</pre>                                
+                            </div> 
                             <p>HTML META NAME 以及內部掛載的模樣：</p>
                             <div class="pre jc-sb ai-ct">
 <pre>
 <code class="language-html">&lt;meta charset=&#34;UTF-8&#34;&gt;&#10;&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;&#10;&lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;ie=edge&#34;&gt;&#10;&lt;title&gt;Material Library&lt;/title&gt;&#10;&lt;!--google plus info--&gt;&#10;&lt;meta itemprop=&#34;name&#34; content=&#34;{&#32178;&#38913;&#27161;&#38988;}&#34;&gt;&#10;&lt;meta itemprop=&#34;image&#34; content=&#34;[&#32178;&#38913;&#32302;&#22294;_1200x628]&#34;&gt;&#10;&lt;meta name=&#34;description&#34; content=&#34;{&#32178;&#38913;&#20839;&#23481;&#25944;&#36848;}&#34; /&gt;&#10;&lt;!--FB info--&gt;&#10;&lt;meta property=&#34;og:title&#34; content=&#34;{&#32178;&#38913;&#27161;&#38988;}&#34; /&gt;&#10;&lt;meta property=&#34;og:site_name&#34; content=&#34;[&#32178;&#31449;&#21517;&#31281;]&#34; /&gt;&#10;&lt;meta property=&#34;og:url&#34; content=&#34;[&#32178;&#38913;&#32178;&#22336;_URL]&#34;&gt;&#10;&lt;meta property=&#34;og:image&#34; content=&#34;[&#32178;&#38913;&#32302;&#22294;_1200x628]&#34;&gt;&#10;&lt;meta property=&#34;og:description&#34; content=&#34;{&#32178;&#38913;&#20839;&#23481;&#25944;&#36848;}&#34;&gt;&#10;&lt;meta property=&#34;og:type&#34; content=&#34;website&#34; /&gt;&#10;&lt;!--Favicon--&gt;&#10;&lt;link rel=&#34;icon&#34; href=&#34;[favicon.ico]&#34; type=&#34;image/x-icon&#34; /&gt;&#10;&lt;!--CSS--&gt;&#10;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css&#34;&gt;&#10;&lt;!-- wow animate --&gt;&#10;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css&#34;&gt;&#10;&lt;!-- owl-default-theme --&gt;&#10;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css&#34;&gt;&#10;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css&#34;&gt;&#10;&lt;!-- main-style --&gt;&#10;&lt;link rel=&#34;stylesheet&#34; href=&#34;css/main.css&#34;&gt;&#10;&lt;body&gt;&#10;         &lt;div id=&#8221;app&#8221;&gt;&#10;                &lt;div class=&#8221;wrapper&#8221;&gt;&#10;                      &lt;nav id=&#8221;navbar&#8221;&gt;&lt;/nav&gt;&#10;                      &lt;main&gt;&lt;/main&gt;&#10;                      &lt;footer&gt;&lt;/footer&gt;&#10;                &lt;/div&gt;&#10;         &lt;/div&gt;&#10;&lt;!--jQuery--&gt;&#10;&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js&#34;&gt;&lt;/script&gt;&#10;&lt;!-- FontAwesome --&gt;&#10;&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js&#34;&gt;&lt;/script&gt;&#10;&lt;script src=&#34;https://unpkg.com/simplebar@latest/dist/simplebar.min.js&#34;&gt;&lt;/script&gt;&#10;&lt;!-- wow.js --&gt;&#10;&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js&#34;&gt;&lt;/script&gt;&#10;&lt;!-- owlCarousel2 --&gt;&#10;&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js&#34;&gt;&lt;/script&gt;&#10;&lt;!-- vue.js --&gt;&#10;&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js&#34;&gt;&lt;/script&gt;&#10;&lt;!-- custom.js --&gt;&#10;&lt;script src=&#34;js/custom.js&#34;&gt;&lt;/script&gt;&#10;&lt;!-- JQ &#25499;&#36617;&#40670; --&gt;&#10;&lt;script&gt;&#10;    $(document).ready(function() {});&#10;&lt;/script&gt;&#10;&lt;/body&gt;&#10;</code>
 </pre>
-                            </div>                            
+                            </div>                           
                         </div>
                     </section>
                 </div>
