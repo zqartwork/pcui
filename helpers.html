@@ -39,6 +39,9 @@
                 <div class="scrollspy-item-wrapper">
                     <a href="#itemAlign" class="scroll-spy-nav-item anchor" data-scroll="itemAlign"><span>物件對齊</span></a>
                     <a href="#textAlign" class="scroll-spy-nav-item anchor" data-scroll="textAlign"><span>文字對齊</span></a>
+                    <a href="#hideEvent" class="scroll-spy-nav-item anchor" data-scroll="hideEvent"><span>顯示與隱藏</span></a>
+                    <a href="#txtEllipsis" class="scroll-spy-nav-item anchor" data-scroll="txtEllipsis"><span>文字溢出</span></a>
+                    <a href="#hoverShadow" class="scroll-spy-nav-item anchor" data-scroll="hoverShadow"><span>浮出特效</span></a>
                 </div>
             </div>
             <main class="with-sider intro">
@@ -53,7 +56,7 @@
                 <div class="divi-wide"></div>
                 <section id="itemAlign">
                     <div class="container">
-                        <h2 class="txt-primary section-title">Align Items</h2>
+                        <h2 class="txt-primary section-title">Align Items 物件對齊</h2>
                         <p>對其容器中的物件，這邊延續前方的 Flexbox 專用。詳細 Flexbox 的對齊方式請參考 Flexbox 專門文件，分清楚 justify-content, align-item, align-content, align-self 的性質差異。</p>
                         <div class="demo-section">
                             <p>水平置中 ( justify-content: center )、垂直置中 ( align-item: center )</p>
@@ -89,7 +92,7 @@
                 </section>
                 <section id="textAlign">
                     <div class="container">
-                        <h2 class="section-title txt-primary">Text Align</h2>
+                        <h2 class="section-title txt-primary">Text Align 文字對齊</h2>
                         <p>在父層為 Block 的情況下，對齊 inline 物件以及文字的簡易方法。</p>
                         <div class="demo-section">
                             <p class="txt-center">--文字置中--</p>
@@ -117,6 +120,89 @@
                                 </tr>
                             </table>
                         </div>
+                        <div class="divi-wide"></div>
+                    </div>
+                </section>
+                <section id="hideEvent">
+                    <div class="container">
+                        <h2 class="section-title txt-primary">顯示與隱藏</h2>
+                        <p>在多裝置顯示的情況下，會需要隱藏顯示部分內容，例如：navbar，這裡有些方便的選擇。</p>
+                        <div class="property-list">
+                            <table>
+                                <tr>
+                                    <th>ClassName</th>
+                                    <th>Property</th>
+                                </tr>
+                                <tr v-for="p3Item in p3Items">
+                                    <td><code class="language-css">{{p3Item.className}}</code></td>
+                                    <td>{{p3Item.property}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="divi-wide"></div>
+                    </div>
+                </section>
+                <section id="txtEllipsis">
+                    <div class="container">
+                        <h2 class="section-title txt-primary">Text Ellipsis 文字溢出</h2>
+                        <p>文字溢出算是非常常用的事件，因此特別列作常出現的 className 選項。</p>
+                        <div class="demo-section col2">
+                            <h4 class="ellipsis">這段敘述會因為太長而被藏起來。</h4>
+                        </div>
+                        <div class="pre jc-sb ai-ct">
+<pre>
+<code class="language-html">&lt;h4 class="ellipsis"&gt;這段敘述會因為太長而被藏起來。&lt;/h4&gt;</code>
+</pre>                            
+                        </div>
+                        <p>文字多行隱藏</p>
+                        <div class="demo-section col2">
+                            <h4 class="multi-ellipsis cl-3">這段敘述會因為太長而被藏起來。這段敘述會因為太長而被藏起來。這段敘述會因為太長而被藏起來。</h4>
+                        </div>
+                        <div class="pre jc-sb ai-ct">
+<pre>
+<code class="language-html">&lt;h4 class="multi-ellipsis cl-3"&gt;這段敘述會因為太長而被藏起來。這段敘述會因為太長而被藏起來。這段敘述會因為太長而被藏起來。&lt;/h4&gt;</code>
+</pre>                            
+                        </div>
+                        <div class="property-list">
+                            <table>
+                                <tr>
+                                    <th>ClassName</th>
+                                    <th>Property</th>
+                                </tr>
+                                <tr v-for="p4Item in p4Items">
+                                    <td><code class="language-css">{{p4Item.className}}</code></td>
+                                    <td>{{p4Item.property}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="divi-wide"></div>
+                    </div>
+                </section>
+                <section id="hoverShadow">
+                    <div class="container">
+                        <h2 class="section-title txt-primary">Hovering Effect 浮出特效</h2>
+                        <p>將滑鼠懸浮於物件上，而物件出現浮出的效果為十分常見的動畫，故獨立出來。</p>
+                        <div class="demo-section">
+                            <a href="#!" class="rec-ext-app-item simple-card-item col4 col10-sm hover-shadow">
+                                <div class="rec-ext-app-img simple-card-img col4">
+                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/apple-touch-icon-152x152.png" alt="">
+                                </div>
+                                <div class="rec-ext-app-body simple-card-body col6">
+                                    <div class="rec-ext-app-name simple-card-name">hoverCardName</div>
+                                    <div class="rec-ext-app-txt simple-card-txt">
+                                        This is card content.
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="pre jc-sb ai-ct">
+<pre>
+<code class="language-html">&lt;div class="simple-card-item hover-shadow"&gt;&lt;/div&gt;</code>
+</pre>                            
+                        </div>
+                        <p>目前使用的陰影方式，是 <code class="language-css">filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.1))</code> 作為基礎，在某些情況會有少數白線 bug ，通常發生在多圖且多層 z-index 的情況下，如想避免，且有IE需求的請自行更改成 box-shadow。</p>
+                        <p>唯一的缺點就只是 .png 圖檔 無法照著形狀做出陰影，在自由設計的程度上造成一定的限制。</p><br>
+                        <p>目前瀏覽器使用狀態請參考 <a href="https://caniuse.com/css-filters" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>【CSS Filter Effect - caniuse.com】</span></a> </p>
                     </div>
                 </section>
             </main>
@@ -217,6 +303,57 @@
                 },{
                     className: '.txt-right',
                     property: 'text-align: right',
+                },
+            ],
+            p3Items: [
+                {
+                    className: 'hide',
+                    property: 'display: none',
+                },{
+                    className: 'hide-on-sm-only',
+                    property: 'Hidden for Mobile only.',
+                },{
+                    className: 'hide-on-m-only',
+                    property: 'Hidden for Tablet only.',
+                },{
+                    className: 'hide-on-l-only',
+                    property: 'Hidden for PC only.',
+                },{
+                    className: 'hide-on-m-and-down',
+                    property: 'Hidden for Tablet and Below.',
+                },{
+                    className: 'hide-on-m-and-up',
+                    property: 'Hidden for Tablet and Above.',
+                },{
+                    className: 'show-on-sm-only',
+                    property: 'Show for Mobile only.',
+                },{
+                    className: 'show-on-m-only',
+                    property: 'Show for Tablet only.',
+                },{
+                    className: 'show-on-l-only',
+                    property: 'Show for PC only.',
+                },{
+                    className: 'show-on-m-and-down',
+                    property: 'Show for Tablet and Below.',
+                },{
+                    className: 'show-on-m-and-up',
+                    property: 'Show for Tablet and Above.',
+                },
+            ],
+            p4Items: [
+                {
+                    className: '.cl-2',
+                    property: '-webkit-line-clamp: 2',
+                },{
+                    className: '.cl-3',
+                    property: '-webkit-line-clamp: 3',
+                },{
+                    className: '.cl-4',
+                    property: '-webkit-line-clamp: 4',
+                },{
+                    className: '.cl-5',
+                    property: '-webkit-line-clamp: 5',
                 },
             ],
         },

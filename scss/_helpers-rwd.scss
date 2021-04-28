@@ -1,0 +1,74 @@
+@media(max-width: 2560px) { //XXL
+    .hide {
+        display: none;
+    }
+    .hide-on-l-only {
+        display: none;
+    }
+    .hide-on-m-and-up {
+        display: none;
+    }
+}
+@media(max-width: 1920px) { //XL
+}
+@media(max-width: 1366px) { //Large
+    .hide-on-m-and-down {
+        display: block;
+    }
+    .show-on-m-only {
+        display: none;
+    }
+    .show-on-l-only {
+        display: block;
+    }
+    .show-on-m-and-down {
+        display: none;
+    }
+}
+@media(max-width: 1024px) { //Medium
+    .show-on-m-and-up {
+        display: block;
+    }
+    .show-on-m-and-down {
+        display: block;
+    }
+    .show-on-l-only {
+        display: none;
+    }
+    .hide-on-l-only {
+        display: block;
+    }
+    .hide-on-sm-only {
+        display: block;
+    }
+    .hide-on-m-and-down {
+        display: none;
+    }
+    .show-on-sm-only {
+        display: none;
+    }
+    .show-on-m-only {
+        display: block;
+    }
+}
+@media(max-width: 768px) { //Small
+    .show-on-m-and-up {
+        display: none;
+    }
+    .hide-on-m-and-up {
+        display: block;
+    }
+    .hide-on-sm-only {
+        display: none;
+    }
+    .show-on-sm-only {
+        display: block;
+    }
+    .show-on-m-only {
+        display: none;
+    }
+}
+@media(max-width: 500px) { //XS
+}
+@media(max-width: 375px) { //XXS
+}

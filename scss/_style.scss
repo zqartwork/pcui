@@ -157,6 +157,34 @@ h4 {
     align-content: stretch;
 }
 
+/*Text Ellipsis*/
+.ellipsis {
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.multi-ellipsis {
+    display: -webkit-box;
+    max-width: 200px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    &.cl-2 {
+        -webkit-line-clamp: 2;
+    }
+    &.cl-3 {
+        -webkit-line-clamp: 3;
+    }
+    &.cl-4 {
+        -webkit-line-clamp: 4;
+    }
+    &.cl-5 {
+        -webkit-line-clamp: 5;
+    }
+}
+
 .row {
     display: flex;
     width: 100%;
@@ -519,4 +547,13 @@ Simple Card Item
     background-color: $b10;  
     padding: 2rem;
     margin: 3.2rem 0 0 0;
+}
+
+.hover-shadow {
+    filter: drop-shadow(0 0px 3px $b-o10);
+    transition: .2s;
+    &:hover {
+        filter: drop-shadow(0 0px 10px $b-o10);
+        transition: .2s;
+    }
 }
