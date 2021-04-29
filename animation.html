@@ -1,0 +1,177 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>PCUI-Useful Tool For Building Up</title>
+<!--google plus info-->
+<meta itemprop="name" content="{網頁標題}">
+<meta itemprop="image" content="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/page-img.jpg">
+<meta name="description" content="{網頁內容敘述}" />
+<!--FB info-->
+<meta property="og:title" content="{網頁標題}" />
+<meta property="og:site_name" content="[網站名稱]" />
+<meta property="og:url" content="[網頁網址_URL]">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/page-img.jpg">
+<meta property="og:description" content="{網頁內容敘述}">
+<meta property="og:type" content="website" />
+<!-- App-icon -->
+<link rel="apple-touch-icon-precomposed" href="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/apple-touch-icon-152x152.png">
+<!--Favicon-->
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/favicon.ico" type="image/x-icon" />
+<!--CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<!-- wow animate -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<!-- owl-default-theme -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- prism.js -->
+<link rel="stylesheet" href="css/prism.css">
+<script src="js/prism.js"></script>
+
+<!-- plyr.js -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.7/plyr.css" />
+
+<!-- main-style -->
+<link rel="stylesheet" href="css/main.css">
+<body>
+    <div id="app">
+        <div class="wrapper">
+            <script src="js/nav.js"></script>
+            <div class="scrollspy scrollspy-theme">
+                <div class="scrollspy-item-wrapper">
+                    <a href="#btnAni" class="scroll-spy-nav-item anchor" data-scroll="btnAni"><span>按鈕動畫</span></a>
+                    <a href="#wowJs" class="scroll-spy-nav-item anchor" data-scroll="wowJs"><span>Wow.js 進場動畫</span></a>
+                </div>
+            </div>
+            <main class="with-sider intro">
+                <section class="" id="pjTitle">
+                    <div class="container">
+                        <h1 class="index-title">Animation 動畫</h1>
+                        <h4 class="intro-title">
+                            <span>常用動畫選集</span>
+                        </h4>
+                    </div>
+                </section>
+                <div class="divi-wide"></div>
+                <section id="btnAni">
+                    <div class="container">
+                        <h2 class="txt-primary section-title">Button 按鈕</h2>
+                        <p>按鈕動畫分為 Hover 鼠標懸浮、Active 點擊動畫，建議可以另外新增 _ani.scss 將你設定的按鈕動畫另外設置在裡面，推薦使用： <a href="https://codepen.io/search/pens?q=Button+animation" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>【Tagged in CodePen】</span></a> 找到讓你滿意的動畫效果。 </p>
+                        <div class="demo-section">
+                            <a href="#!" class="primary-btn hover-style-1"><span>HOVER</span></a>
+                            <a href="#!" class="primary-btn click-style-1"><span>ACTIVE</span></a>
+                        </div>
+                        <div class="property-list">
+                            <table>
+                                <tr>
+                                    <th>ClassName</th>
+                                    <th>Property</th>
+                                </tr>
+                                <tr v-for="ppItem in ppItems">
+                                    <td><code class="language-css">{{ppItem.className}}</code></td>
+                                    <td>{{ppItem.property}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="divi-wide"></div>
+                    </div>
+                </section>
+                <section id="wowJs">
+                    <div class="container">
+                        <h2 class="section-title txt-primary">Wow.js 滾動進場動畫</h2>
+                        <p>常見的隨著滾輪進場而出現的動畫，這是一個輕量級的插件 Wow.js。詳見：<a href="https://wowjs.uk/" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>【Wow.js】</span></a></p>
+                        <div class="demo-section ">
+                            <div class="row jc-ct ai-ct"><div class="wow-demo-brick wow fadeInLeft"></div>
+                            <div class="wow-demo-brick wow fadeInRight"></div>
+                            <div class="wow-demo-brick wow fadeInUp"></div></div>
+                            <div class="row jc-ct ai-ct"><div class="wow-demo-brick wow fadeInDown"></div>
+                            <div class="wow-demo-brick wow bounce"></div>
+                            <div class="wow-demo-brick wow rubberBand"></div></div>
+                        </div>
+                        <div class="pre">
+<pre><code class="language-html">&lt;div class="demo-section row jc-ct ai-ct"&gt;
+    &lt;div class="wow-demo-brick wow fadeInLeft"&gt;&lt;/div&gt;
+    &lt;div class="wow-demo-brick wow fadeInRight"&gt;&lt;/div&gt;
+    &lt;div class="wow-demo-brick wow fadeInUp"&gt;&lt;/div&gt;
+    &lt;div class="wow-demo-brick wow fadeInDown"&gt;&lt;/div&gt;
+    &lt;div class="wow-demo-brick wow bounce"&gt;&lt;/div&gt;
+    &lt;div class="wow-demo-brick wow rubberBand"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                        <p>JS與CSS透過文件說明掛載好後，在所有要移動的物件上加上 <code class="language-html">class="wow animate_name"</code> 即可順利發動，唯一需要注意的是，如果想要自訂動畫，可以下載 animate.css 在 Local 更改，又或者另外新建 animate-custom.css 覆蓋掉掛載的 css，透過層級的方式也可以避免破壞原檔唷！</p>
+                    </div>
+                </section>
+            </main>
+            <script src="js/footer.js"></script>
+        </div>
+    </div>
+<!--jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<!-- FontAwesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<!-- wow.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- owlCarousel2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- vue.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+<!-- plyr.js -->
+<script src="https://cdn.plyr.io/3.6.7/demo.js" crossorigin="anonymous"></script>
+
+<!-- JQ 掛載點 -->
+
+
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            ppItems: [
+                {
+                    className: '.hover-style-1',
+                    property: `filter: brightness(1.1)`,
+                },{
+                    className: '.click-style-1',
+                    property: `transform: translateY(5px);`,
+                },
+            ],
+            p2Items: [
+                {
+                    className: '.ratio16-9',
+                    property: '固定 16:9 的比例，使用 Padding-top: 9 / 16 x 100% 做處理。',
+                },{
+                    className: '.ratio4-3',
+                    property: '固定 4:3 的比例，使用 Padding-top: 3 / 4 x 100% 做處理。',
+                },{
+                    className: '.ratio3-2',
+                    property: '固定 3:2 的比例，使用 Padding-top: 2 / 3 x 100% 做處理。',
+                },{
+                    className: '.ratio8-5',
+                    property: '固定 8:5 的比例，使用 Padding-top: 5 / 8 x 100% 做處理。',
+                },{
+                    className: '.square',
+                    property: '固定 1:1 的比例，使用 Padding-top: 1 / 1 x 100% 做處理。',
+                },
+            ]
+
+        },
+        method:"",
+        mounted() {
+            
+        },
+    })
+</script>
+
+<script>
+    const player = new Plyr('#player');
+</script>
+<script>
+    $(document).ready(function() {
+        classToggler();
+        new WOW().init();
+    });
+</script>
+<!-- custom.js -->
+<script src="js/custom.js"></script>
+
+</body>

@@ -1,0 +1,18 @@
+a.hover-style-1 {
+    transition: .2s;
+    &:hover {
+        filter: brightness(1.1)
+    }
+}
+a.click-style-1 {
+    transition: .2s;
+    &:active {
+        transform: translateY(5px);
+    }
+}
+.wow-demo-brick {
+    width: 3.2rem;
+    background-color: $primary;
+    height: 3.2rem;
+    margin: 3.2rem
+}

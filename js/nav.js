@@ -23,7 +23,6 @@ document.write( '                                    <a href=\"grid.html\" class
 document.write( '                                    <a href=\"helpers.html\" class=\"nav-item\"><span>Helpers</span></a>\n' );
 document.write( '                                    <a href=\"media.html\" class=\"nav-item\"><span>Media</span></a>\n' );
 document.write( '                                    <a href=\"animation.html\" class=\"nav-item\"><span>Animation</span></a>\n' );
-document.write( '                                    <a href=\"scss.html\" class=\"nav-item\"><span>Scss</span></a>\n' );
 document.write( '                                    <a href=\"shadow.html\" class=\"nav-item\"><span>Shadow</span></a>\n' );
 document.write( '                                    <a href=\"table.html\" class=\"nav-item\"><span>Table</span></a>\n' );
 document.write( '                                    <a href=\"transition.html\" class=\"nav-item\"><span>Transition</span></a>\n' );

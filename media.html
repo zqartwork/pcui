@@ -221,6 +221,18 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                         </div>
+                        <div class="property-list">
+                            <table>
+                                <tr>
+                                    <th>ClassName</th>
+                                    <th>Property</th>
+                                </tr>
+                                <tr v-for="p2Item in p2Items">
+                                    <td><code class="language-css">{{p2Item.className}}</code></td>
+                                    <td>{{p2Item.property}}</td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </section>
             </main>
@@ -266,6 +278,25 @@
                     property: `width: 100%; height: 100%; object-fit: fill;`,
                 },
             ],
+            p2Items: [
+                {
+                    className: '.ratio16-9',
+                    property: '固定 16:9 的比例，使用 Padding-top: 9 / 16 x 100% 做處理。',
+                },{
+                    className: '.ratio4-3',
+                    property: '固定 4:3 的比例，使用 Padding-top: 3 / 4 x 100% 做處理。',
+                },{
+                    className: '.ratio3-2',
+                    property: '固定 3:2 的比例，使用 Padding-top: 2 / 3 x 100% 做處理。',
+                },{
+                    className: '.ratio8-5',
+                    property: '固定 8:5 的比例，使用 Padding-top: 5 / 8 x 100% 做處理。',
+                },{
+                    className: '.square',
+                    property: '固定 1:1 的比例，使用 Padding-top: 1 / 1 x 100% 做處理。',
+                },
+            ]
+
         },
         method:"",
         mounted() {
