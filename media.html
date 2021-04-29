@@ -1,0 +1,283 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>PCUI-Useful Tool For Building Up</title>
+<!--google plus info-->
+<meta itemprop="name" content="{網頁標題}">
+<meta itemprop="image" content="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/page-img.jpg">
+<meta name="description" content="{網頁內容敘述}" />
+<!--FB info-->
+<meta property="og:title" content="{網頁標題}" />
+<meta property="og:site_name" content="[網站名稱]" />
+<meta property="og:url" content="[網頁網址_URL]">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/page-img.jpg">
+<meta property="og:description" content="{網頁內容敘述}">
+<meta property="og:type" content="website" />
+<!-- App-icon -->
+<link rel="apple-touch-icon-precomposed" href="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/apple-touch-icon-152x152.png">
+<!--Favicon-->
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/favicon.ico" type="image/x-icon" />
+<!--CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<!-- wow animate -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<!-- owl-default-theme -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- prism.js -->
+<link rel="stylesheet" href="css/prism.css">
+<script src="js/prism.js"></script>
+
+<!-- plyr.js -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.7/plyr.css" />
+
+<!-- main-style -->
+<link rel="stylesheet" href="css/main.css">
+<body>
+    <div id="app">
+        <div class="wrapper">
+            <script src="js/nav.js"></script>
+            <div class="scrollspy scrollspy-theme">
+                <div class="scrollspy-item-wrapper">
+                    <a href="#imagePart" class="scroll-spy-nav-item anchor" data-scroll="imagePart"><span>圖片</span></a>
+                    <a href="#videoPart" class="scroll-spy-nav-item anchor" data-scroll="videoPart"><span>影片</span></a>
+                    <a href="#fixRatio" class="scroll-spy-nav-item anchor" data-scroll="fixRatio"><span>固定物件比例</span></a>
+                </div>
+            </div>
+            <main class="with-sider intro">
+                <section class="" id="pjTitle">
+                    <div class="container">
+                        <h1 class="index-title">Media 多媒體</h1>
+                        <h4 class="intro-title">
+                            <span>圖片、影片也是常用物件，有些常用預設值。</span>
+                        </h4>
+                    </div>
+                </section>
+                <div class="divi-wide"></div>
+                <section id="imagePart">
+                    <div class="container">
+                        <h2 class="txt-primary section-title">Images 圖片</h2>
+                        <p>所有圖片預設都是 Responsive 的狀態， <code class="language-css">width: 100%; height: auto;</code> </p>
+                        <div class="demo-section row">
+                            <div class="col col4">
+                                <code class="language-html">&lt;img src="img/...jpg" class=""&gt;</code>
+                                <div class="demo-img-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/work/006.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col col4">
+                                <code class="language-html">&lt;img src="img/...jpg" class="obj-cover"&gt;</code>
+                                <div class="demo-img-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/work/006.jpg" alt="" class="obj-cover">
+                                </div>
+                            </div>
+                            <div class="col col4">
+                                <code class="language-html">&lt;img src="img/...jpg" class="obj-contain"&gt;</code>
+                                <div class="demo-img-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/work/006.jpg" alt="" class="obj-contain">
+                                </div>
+                            </div>
+                            <div class="col col4">
+                                <code class="language-html">&lt;img src="img/...jpg" class="obj-fill"&gt;</code>
+                                <div class="demo-img-frame">
+                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/work/006.jpg" alt="" class="obj-fill">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-list">
+                            <table>
+                                <tr>
+                                    <th>ClassName</th>
+                                    <th>Property</th>
+                                </tr>
+                                <tr v-for="ppItem in ppItems">
+                                    <td><code class="language-css">{{ppItem.className}}</code></td>
+                                    <td>{{ppItem.property}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="divi-wide"></div>
+                        <h3 class="txt-primary section-title">Crop Image 圖片遮罩</h3>
+                        <h4 class="sub-title"> <span class="txt-primary">方法一：</span> border-rasius + overflow-hidden，僅提供圓形+img.obj-cover</h4>
+                        <div class="demo-section">
+                            <div class="col col4">
+                                <div class="col3">
+                                    <div class="circle">
+                                        <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/work/006.jpg" alt="" class="obj-cover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pre">
+<pre>
+<code class="language-html">&lt;div class="circle"&gt;
+    &lt;img src="https://XXX.jpg" alt="" class="obj-cover"&gt;
+&lt;/div&gt;</code>
+</pre>
+                        </div>
+                        <h4 class="sub-title"> <span class="txt-primary">方法二：</span> 可以產生多邊形的遮罩。Clip-path <a href="https://bennettfeely.com/clippy/" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>【前往產生器】</span></a> 並將產生出來的css碼，貼到 custom 的 .clippy 中。</h4>
+                        <div class="demo-section">
+                            <div class="col col3">
+                                <div class="clippy">
+                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/work/006.jpg" alt="" class="obj-cover">
+                                </div>
+                            </div>
+                        </div>
+<pre>
+<code class="language-html">&lt;div class="clippy"&gt;
+    &lt;img src="https://XXX.jpg" alt="" class="obj-cover"&gt;
+&lt;/div&gt;</code>
+</pre>
+<pre><code class="language-css">
+    .clippy {
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); /*此行請貼上您產生出來的code*/
+    }
+</code>
+</pre>
+                    <div class="divi-wide"></div>
+                    </div>
+                </section>
+                <section id="videoPart">
+                    <div class="container">
+                        <h2 class="section-title txt-primary">Video 影片</h2>
+                        <p>此區分為 iframe, HTML5Video, 實用套件分享。</p><br>
+                        <h3 class="section-title txt-primary">iFrame</h3>
+                        <p>iframe 大小控制與 img 相同，這邊使用 <a href="#fixRatio" class="txt-primary anchor"><span>fix-ratio</span></a> 的方式。 </p>
+                        <div class="demo-section">
+                            <div class="col5">
+                                <div class="video-container ratio16-9">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/NQIeAbFT4Kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="obj-cover"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h3 class="section-title txt-primary">HTML5 Video</h3>
+                        <p>iframe 大小控制與 img 相同，這邊使用 <a href="#fixRatio" class="txt-primary anchor"><span>fix-ratio</span></a> 的方式。 </p>
+                        <div class="demo-section">
+                            <div class="col5">
+                                <div class="video-container ratio16-9">
+                                    <video autoplay="" class="" playsinline="" poster="https://ak.picdn.net/shutterstock/videos/1060207139/thumb/1.jpg" controls >
+                                        <source src="https://ak.picdn.net/shutterstock/videos/1060207139/preview/stock-footage-seamless-loop-galaxy-exploration-through-outer-space-towards-glowing-milky-way-galaxy-k-looping.webm" type="video/webm">
+                                        <source src="https://ak.picdn.net/shutterstock/videos/1060207139/preview/stock-footage-seamless-loop-galaxy-exploration-through-outer-space-towards-glowing-milky-way-galaxy-k-looping.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h3 class="section-title txt-primary">Custom HTML5 Video: Plyr.js</h3>
+                        <p>推薦套件： <a href="https://plyr.io/" target="_blank" rel="noopener noreferrer" class="txt-primary"><span>Plyr.js</span></a> 主要是因為套件 Style 預設就已經很好看，另外想要 Customize 活動度也夠大，非常推薦研究一下。 </p>
+                        <div class="demo-section">
+                            <div class="col5 demo-plyr">
+                                <video id="player" playsinline controls data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+                                    <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" />
+                                    <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.webm" type="video/webm" />
+                                  </video>
+                            </div>
+                        </div>
+                        <div class="divi-wide"></div>
+                    </div>
+                </section>
+                <section id="fixRatio">
+                    <div class="container">
+                        <h2 class="section-title txt-primary">Fix Ratio 物件固定比例</h2>
+                        <p>此項性質對 img, video, iframe, div 都適用，用於較高級的 RWD 技巧，可以固定縮圖等等物件的比例，隨著網頁寬度做等比縮放。</p>
+                        <div class="demo-section row">
+                            <div class="col col3">
+                                <div class="ratio4-3">
+                                    <div class="demo-square row jc-ct ai-ct">4:3</div>
+                                </div>
+                            </div>
+                            <div class="col col3">
+                                <div class="ratio3-2">
+                                    <div class="demo-square lighter1 row jc-ct ai-ct">3:2</div>
+                                </div>
+                            </div>
+                            <div class="col col3">
+                                <div class="ratio16-9">
+                                    <div class="demo-square lighter2 row jc-ct ai-ct">16:9</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pre">
+<pre><code class="language-html">&lt;div class="demo-section row"&gt;
+    &lt;div class="col col3"&gt;
+        &lt;div class="ratio4-3"&gt;
+            &lt;div class="demo-square row jc-ct ai-ct"&gt;4:3&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col col3"&gt;
+        &lt;div class="ratio3-2"&gt;
+            &lt;div class="demo-square lighter1 row jc-ct ai-ct"&gt;3:2&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col col3"&gt;
+        &lt;div class="ratio16-9"&gt;
+            &lt;div class="demo-square lighter2 row jc-ct ai-ct"&gt;16:9&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <script src="js/footer.js"></script>
+        </div>
+    </div>
+<!--jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<!-- FontAwesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<!-- wow.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- owlCarousel2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- vue.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+<!-- plyr.js -->
+<script src="https://cdn.plyr.io/3.6.7/demo.js" crossorigin="anonymous"></script>
+
+<!-- JQ 掛載點 -->
+<script>
+    $(document).ready(function() {
+        classToggler();
+    });
+</script>
+
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            ppItems: [
+                {
+                    className: 'N/A',
+                    property: `width: 100%; height: auto;`,
+                },{
+                    className: '.obj-cover',
+                    property: `width: 100%; height: 100%; object-fit: cover;`,
+                },{
+                    className: '.obj-contain',
+                    property: `width: 100%; height: 100%; object-fit: contain;`,
+                },{
+                    className: '.obj-fill',
+                    property: `width: 100%; height: 100%; object-fit: fill;`,
+                },
+            ],
+        },
+        method:"",
+        mounted() {
+            
+        },
+    })
+</script>
+
+<script>
+    const player = new Plyr('#player');
+</script>
+<!-- custom.js -->
+<script src="js/custom.js"></script>
+
+</body>
