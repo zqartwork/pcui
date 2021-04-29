@@ -1,0 +1,134 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>PCUI-Useful Tool For Building Up</title>
+<!--google plus info-->
+<meta itemprop="name" content="{網頁標題}">
+<meta itemprop="image" content="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/page-img.jpg">
+<meta name="description" content="{網頁內容敘述}" />
+<!--FB info-->
+<meta property="og:title" content="{網頁標題}" />
+<meta property="og:site_name" content="[網站名稱]" />
+<meta property="og:url" content="[網頁網址_URL]">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/page-img.jpg">
+<meta property="og:description" content="{網頁內容敘述}">
+<meta property="og:type" content="website" />
+<!-- App-icon -->
+<link rel="apple-touch-icon-precomposed" href="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/apple-touch-icon-152x152.png">
+<!--Favicon-->
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/PCUI/favicon.ico" type="image/x-icon" />
+<!--CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<!-- wow animate -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<!-- owl-default-theme -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- prism.js -->
+<link rel="stylesheet" href="css/prism.css">
+<script src="js/prism.js"></script>
+
+<!-- plyr.js -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.7/plyr.css" />
+
+<!-- main-style -->
+<link rel="stylesheet" href="css/main.css">
+<body>
+    <div id="app">
+        <div class="wrapper">
+            <script src="js/nav.js"></script>
+            <main class="with-sider intro">
+                <section class="" id="pjTitle">
+                    <div class="container">
+                        <h1 class="index-title">Transition 變形動畫</h1>
+                        <h4 class="intro-title">
+                            <span>透過按鈕操縱的指定變形動畫。</span>
+                        </h4>
+                    </div>
+                </section>
+                <div class="divi-wide"></div>
+                <section id="shadowPart">
+                    <div class="container">
+                        <h2 class="section-title txt-primary">Scale, Opacity, Position 的變化</h2>
+                        <p>最常使用的三個選項，放大縮小、透明度以及位置變化。</p>
+                        <div class="demo-section row jc-ct ai-ct">
+                            <div class="demo-trans-brick row jc-ct ai-ct scale-trans">scaleTarget</div>
+                            <a href="#!" class="primary-btn trans-actor" trans-target=".scale-trans"><span>Scale Toggle</span></a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <script src="js/footer.js"></script>
+        </div>
+    </div>
+<!--jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<!-- FontAwesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<!-- wow.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- owlCarousel2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- vue.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+<!-- plyr.js -->
+<script src="https://cdn.plyr.io/3.6.7/demo.js" crossorigin="anonymous"></script>
+
+<!-- JQ 掛載點 -->
+
+
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            ppItems: [
+                {
+                    className: '.hover-style-1',
+                    property: `filter: brightness(1.1)`,
+                },{
+                    className: '.click-style-1',
+                    property: `transform: translateY(5px);`,
+                },
+            ],
+            p2Items: [
+                {
+                    className: '.ratio16-9',
+                    property: '固定 16:9 的比例，使用 Padding-top: 9 / 16 x 100% 做處理。',
+                },{
+                    className: '.ratio4-3',
+                    property: '固定 4:3 的比例，使用 Padding-top: 3 / 4 x 100% 做處理。',
+                },{
+                    className: '.ratio3-2',
+                    property: '固定 3:2 的比例，使用 Padding-top: 2 / 3 x 100% 做處理。',
+                },{
+                    className: '.ratio8-5',
+                    property: '固定 8:5 的比例，使用 Padding-top: 5 / 8 x 100% 做處理。',
+                },{
+                    className: '.square',
+                    property: '固定 1:1 的比例，使用 Padding-top: 1 / 1 x 100% 做處理。',
+                },
+            ]
+
+        },
+        method:"",
+        mounted() {
+            
+        },
+    })
+</script>
+
+<script>
+    const player = new Plyr('#player');
+</script>
+<script>
+    $(document).ready(function() {
+        classToggler();
+        new WOW().init();
+        transActor();
+    });
+</script>
+<!-- custom.js -->
+<script src="js/custom.js"></script>
+
+</body>

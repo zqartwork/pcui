@@ -108,3 +108,15 @@ let classToggler = function(){
     target.toggleClass('active');
   })
 }
+
+/*
+-----
+Transition Actor
+-----
+*/
+let transActor = function(){
+  let transBtn = $('.trans-actor');
+  transBtn.click(function(){
+    $($(this).attr('trans-target')).toggleClass('active');
+  })
+}

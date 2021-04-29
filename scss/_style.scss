@@ -629,3 +629,27 @@ Simple Card Item
         transition: .2s;
     }
 }
+
+.shadow-5 {
+    filter: drop-shadow(0 0 5px rgba(0,0,0,.2))
+}
+.shadow-10 {
+    filter: drop-shadow(0 0 10px rgba(0,0,0,.2))
+}
+.shadow-15 {
+    filter: drop-shadow(0 0 15px rgba(0,0,0,.2))
+}
+.shadow-20 {
+    filter: drop-shadow(0 0 20px rgba(0,0,0,.2))
+}
+.shadow-25 {
+    filter: drop-shadow(0 0 25px rgba(0,0,0,.2))
+}
+
+.scale-trans {
+    transform: scale(1);
+    transition: .2s;
+    &.active {
+        transform: scale(0);
+    }
+}
