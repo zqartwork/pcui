@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{Tournament Page}比賽報到 - House of Gamers</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="{網頁標題}">
+    <meta itemprop="image" content="[網頁縮圖_1200x628]">
+    <meta name="description" content="{網頁內容敘述}" />
+    <!--FB info-->
+    <meta property="og:title" content="{網頁標題}" />
+    <meta property="og:site_name" content="[網站名稱]" />
+    <meta property="og:url" content="[網頁網址_URL]">
+    <meta property="og:image" content="[網頁縮圖_1200x628]">
+    <meta property="og:description" content="{網頁內容敘述}">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- date-time-picker -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css">
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/update.css">
+</head>
+
+<body>
+    <div class="app" data-simplebar>
+        <!-- 主選單 Tapbar -->
+        <div class="nav">
+            <div class="nav-wrap">
+                <div class="nav-item-wrap">
+                    <a href="index.html" class="nav-item">
+                        <span class="pic logo"></span>
+                    </a>
+                    <a href="index.html" class="nav-item active">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_home size-32"></span>
+                            <span>首頁</span>
+                        </div>
+                    </a>
+                    <a href="tournament-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_cup size-32"></span>
+                            <span>賽事</span>
+                        </div>
+                    </a>
+                    <a href="announce-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_announce size-32"></span>
+                            <span>公告</span>
+                        </div>
+                    </a>
+                    <a href="forum-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_forum size-32"></span>
+                            <span>論壇</span>
+                        </div>
+                    </a>
+                    <a href="my.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_my size-32"></span>
+                            <span>我的</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper ">
+            <!-- Toolbar -->
+            <section class="section toolbar">
+                <div class="container">
+                    <div class="ic-wrap jc-sb W-100">
+                        <div class="backer-wrap">
+                            <a href="#!" onclick="goBack()" class="ic-wrap size-32">
+                                <i class="fas fa-chevron-left"></i>
+                                <!-- <span>返回</span> -->
+                            </a>
+                        </div>
+                        <div class="toolbar-title">
+                            <span>{ TournamentNameTournamentNameTournamentName } 比賽報到</span>
+                        </div>
+                        <!-- 此外框一定要留著 -->
+                        <div class="func-wrap">
+                            <a href="tutorial.html" class="func-item">
+                                <span class="icon-ic_tutorial size-32" badge></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- 比賽狀態 -->
+            <section class="section">
+                <div class="container">
+                    <div class="item-extitle txt-center dragscroll W-100"><span> Ａ組 對戰 #{MatchNum} </span></div>
+                    <div class="item-subtitle sm txt-center W-100"><span>BO3, 第一場</span></div>
+                    <div class="sep-item txt-center">
+                        <div class="match-icon-wrap ic-wrap">
+                            <a href="match-teaminfo.html" class="match-team-item left ic-wrap vt">
+                                <div class="item-subtitle sm"><span>進攻方</span></div>
+                                <div class="match-thumb">
+                                    <div class="ratio ratio__1-1"><img src="img/pic_preset_thumbnail.svg" alt=""></div>
+                                </div>
+                                <div class="item-title sep"><span>戰隊名稱</span></div>
+                                <!-- <div class="status-tag" disabled>未報到</div> -->
+                                <div class="status-tag active">已報到</div>
+                            </a>
+                            <div class="match-team-score-wrap ic-wrap vt">
+                                <div class="score-part ic-wrap jc-sb W-100">
+                                    <div class="score left item-extitle"><span>0</span></div>
+                                    <div class="item-subtitle">VS</div>
+                                    <div class="score right item-extitle"><span>0</span></div>
+                                </div>
+                                <!-- <div class="status-tag" disabled>尚未開放報到</div> -->
+                                <div class="status-tag middle">開放報到中</div>
+                                <!-- <div class="status-tag active">比賽進行中</div> -->
+                                <div class="item-title sm sep"><span>地圖：義境空島</span></div>
+                            </div>
+                            <a href="match-teaminfo.html" class="match-team-item right ic-wrap vt">
+                                <div class="item-subtitle sm"><span>防守方</span></div>
+                                <div class="match-thumb">
+                                    <div class="ratio ratio__1-1"><img src="img/pic_preset_thumbnail.svg" alt=""></div>
+                                </div>
+                                <div class="item-title sep"><span>戰隊名稱</span></div>
+                                <div class="status-tag" disabled>未報到</div>
+                                <!-- <div class="status-tag active">已報到</div> -->
+                            </a>
+                        </div>
+                    </div>
+                    <!-- RiotID -->
+                    <div class="sep-item frame md">
+                        <div class="ic-wrap W-100 jc-sb">
+                            <div>
+                                <div class="item-subtitle sm">
+                                    <span>甲方隊長 RiotID</span>
+                                </div>
+                                <div class="ic-wrap item-title">
+                                    <span\>UserID#1234</span>
+                                </div>
+                            </div>
+                            <span mr> - </span>
+                            <div class="">
+                                <div class="item-subtitle sm txt-right">
+                                    <span>乙方隊長 RiotID</span>
+                                </div>
+                                <div class="ic-wrap item-title txt-right jc-fe">
+                                    <span>UserID#1234</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 管理員操作選項 -->
+                    <div class="sep-item frame md">
+                        <div class="item-subtitle sm"><span>管理員操作選項</span></div>
+                        <a href="#!" class="btn btn__chevron-txt alert-opener" alert-to="adminAdjustTime">
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">比賽時間</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <span class="item-subtitle dragscroll">設定時間</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <!-- [比賽時間] - 確定時間之後變成彈窗 -->
+                        <!-- <input type="text" id="timeCustom" value="" readonly>
+                        <label class="btn btn__chevron-txt date-time-picker" for="timeCustom">
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title"><span>比賽時間</span></div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <span class="item-subtitle dragscroll">設定時間</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </label>
+                        <a href="#!" class="date-time-remove"><i class="fas fa-trash-alt"></i></a> -->
+                        <a href="#!" class="btn btn__chevron-txt alert-opener" alert-to="pickTeam">
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">判定棄權</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <span class="item-subtitle dragscroll">尚未指定</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <a href="#!" class="btn btn__chevron-txt alert-opener" alert-to="pickTeam">
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">判定晉級</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <span class="item-subtitle dragscroll">尚未指定</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <a href="#!" class="btn btn__chevron-txt alert-opener" alert-to="uploadResult">
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">勝果圖片</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <span class="item-subtitle dragscroll">尚未上傳</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <a href="#!" class="btn btn__chevron-txt alert-opener" alert-to="abstain">
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">雙方棄權</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- 比賽報到、上傳結果 -->
+            <div class="btn-bot-posi-wrap">
+                
+            </div>
+        </div>
+        <footer class="">
+            <div class="container">
+                <div class="copyright">
+                    <span>© 2020 Taiwan Mobile all right reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Alert Box Report Model-->
+    <div class="alert-box" id="adminAdjustTime">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header ic-wrap W-100">
+                    <div class="item-title">設定時間</div>
+                </div>
+                <div class="box-body font-style" >
+                    <div class="txt-center">
+                        <input type="text" id="timeCustom" value="" readonly>
+                        <label class="btn btn__normal date-time-picker" for="timeCustom">
+                            <div class="W-100 txt-center">
+                                <div class="item-title"><span>設定時間</span></div>
+                            </div>
+                            <div class="btn-right W-0 ic-wrap">
+                                <!-- 錯誤訊息 -->
+                                <div class="systxt err txt-right"><span>此時間已失效</span></div>
+                            </div>
+                        </label>
+                        <a href="#!" class="date-time-remove"><i class="fas fa-trash-alt"></i></a>
+                    </div></div>
+                <div class="box-divi"></div>
+                <div class="box-footer">
+                    <div class="ic-wrap jc-sb W-100 db">
+                        <a href="#!" class="box-confirm blue alert-closer txt-center W-100">
+                            <span>取消</span>
+                        </a>
+                        <a href="#!" class="box-confirmred red txt-center W-100 alert-closer">
+                            <span>確認</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Alert Box Report Model-->
+    <div class="alert-box" id="pickTeam">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header ic-wrap W-100">
+                    <div class="item-title">判定棄權 / 晉級</div>
+                </div>
+                <div class="box-body font-style" >
+                    <div class="ic-wrap W-100">
+                        <a href="#!" class="match-team-item left ic-wrap vt pick-team">
+                            <div class="match-thumb">
+                                <div class="ratio ratio__1-1"><img src="img/pic_preset_thumbnail.svg" alt=""></div>
+                            </div>
+                            <div class="item-title sep"><span>戰隊名稱</span></div>
+                        </a>
+                        <a href="#!" class="match-team-item left ic-wrap vt pick-team">
+                            <div class="match-thumb">
+                                <div class="ratio ratio__1-1"><img src="img/pic_preset_thumbnail.svg" alt=""></div>
+                            </div>
+                            <div class="item-title sep"><span>戰隊名稱</span></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-divi"></div>
+                <div class="box-footer">
+                    <div class="ic-wrap jc-sb W-100 db">
+                        <a href="#!" class="box-confirm blue alert-closer txt-center W-100">
+                            <span>取消</span>
+                        </a>
+                        <a href="#!" class="box-confirmred red txt-center W-100 alert-closer">
+                            <span>確認</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Alert Box Report Model-->
+    <div class="alert-box" id="uploadResult">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header ic-wrap W-100">
+                    <div class="item-title">判定棄權 / 晉級</div>
+                </div>
+                <div class="box-body font-style" >
+                    <div class="ic-wrap W-100">
+                        <input type="file" name="uploadFile" id="uploadFile003" class="upload-file"
+                            data-multiple-caption="已上傳">
+                        <label for="uploadFile003" class="btn btn__chevron-txt">
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">勝果上傳</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <span class="item-subtitle">尚未上傳</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </label>
+                    </div>
+                    <div class="ic-wrap W-100"><a href=""><span><i class="fas fa-trash-alt" mr></i>清除勝果圖片</span></a></div>
+                </div>
+                <div class="box-divi"></div>
+                <div class="box-footer">
+                    <div class="ic-wrap jc-sb W-100 db">
+                        <a href="#!" class="box-confirm blue alert-closer txt-center W-100">
+                            <span>取消</span>
+                        </a>
+                        <a href="#!" class="box-confirmred red txt-center W-100 alert-closer">
+                            <span>確認</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Alert Box 解散隊伍-->
+    <div class="alert-box" id="abstain">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header">
+                    <div class="item-title">確定要棄權雙方隊伍嗎？</div>
+                </div>
+                <div class="box-body">
+                    <div class="msg">一但棄權雙方隊伍，則立即解散此對戰。</div>
+                </div>
+                <div class="box-divi"></div>
+                <div class="box-footer">
+                    <div class="ic-wrap jc-sb W-100 db">
+                        <a href="#!" class="box-confirm red alert-closer txt-center W-100">
+                            <span>取消</span>
+                        </a>
+                        <a href="match-check-in-admin.html" class="box-confirm blue txt-center W-100">
+                            <span>確定要棄權雙方</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- simplebar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.2.1/simplebar.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.2.1/simplebar.min.js"></script>
+    <script src="js/dragscroll.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- date-time-picker -->
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function () {
+            // new WOW().init();
+            $('#timeCustom').datetimepicker();
+            let pickTimeLimit = 2;
+
+            $("input.pick-time:checkbox").click(function () {
+                var bol = $("input:checkbox:checked").length >= pickTimeLimit;
+                var bolb = $("input:checkbox:checked").length >= pickTimeLimit - 1;
+                var valb = $("input#timeCustom").val() != ''
+                console.log(valb)
+                if (!valb && bol) {
+                    $("input:checkbox").not(":checked").attr("disabled", bol);
+                    $("input#timeCustom").attr("disabled", bol);
+                } else if (valb && bolb) {
+                    $("input:checkbox").not(":checked").attr("disabled", bolb);
+                } else {
+                    $("input:checkbox").not(":checked").removeAttr("disabled");
+                    $("input#timeCustom").removeAttr("disabled");
+                }
+            });
+            $("input#timeCustom").change(function () {
+                var bol = $("input:checkbox:checked").length >= pickTimeLimit;
+                var bolb = $("input:checkbox:checked").length >= pickTimeLimit - 1;
+                var valb = $("input#timeCustom").val() != ''
+                console.log(valb)
+                if (!valb && bol) {
+                    $("input:checkbox").not(":checked").attr("disabled", bol);
+                    $("input#timeCustom").attr("disabled", bol);
+                } else if (valb && bolb) {
+                    $("input:checkbox").not(":checked").attr("disabled", bolb);
+                } else {
+                    $("input:checkbox").not(":checked").removeAttr("disabled");
+                    $("input#timeCustom").removeAttr("disabled");
+                }
+            })
+            /*
+            --------------------
+            Custom DateTime Picker
+            --------------------
+            */
+            $('#timeCustom').change(function () {
+                let val = $(this).val();
+                console.log(val)
+                if (val === '') {
+                    $('.btn[for=timeCustom] .item-title span').html('設定時間')
+                } else {
+                    $('.btn[for=timeCustom] .item-title span').html($(this).val())
+                    $('#matchTime .simple-line').html($(this).val())
+                    $('.btn[for=timeCustom]').addClass('active');
+                    $('.date-time-remove').show();
+                }
+            })
+
+            $('.date-time-remove').click(function () {
+                $('#timeCustom').val('')
+                $('.btn[for=timeCustom] .item-title span').html('設定時間')
+                $('#matchTime .simple-line').html('{pickTimeValue選擇時間顯示在這裡}')
+                $('.btn[for=timeCustom]').removeClass('active');
+                $('.date-time-remove').hide();
+                $("input:checkbox").not(":checked").attr("disabled", false);
+
+                console.log($('#timeCustom').val())
+            })
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>報名與比賽教學 - House of Gamers</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="{網頁標題}">
+    <meta itemprop="image" content="[網頁縮圖_1200x628]">
+    <meta name="description" content="{網頁內容敘述}" />
+    <!--FB info-->
+    <meta property="og:title" content="{網頁標題}" />
+    <meta property="og:site_name" content="[網站名稱]" />
+    <meta property="og:url" content="[網頁網址_URL]">
+    <meta property="og:image" content="[網頁縮圖_1200x628]">
+    <meta property="og:description" content="{網頁內容敘述}">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <!-- owl-default-theme -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/update.css">
+</head>
+
+<body>
+    <div class="app" data-simplebar>
+        <!-- 主選單 Tapbar -->
+        <div class="nav">
+            <div class="nav-wrap">
+                <div class="nav-item-wrap">
+                    <a href="index.html" class="nav-item">
+                        <span class="pic logo"></span>
+                    </a>
+                    <a href="index.html" class="nav-item active">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_home size-32"></span>
+                            <span>首頁</span>
+                        </div>
+                    </a>
+                    <a href="tournament-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_cup size-32"></span>
+                            <span>賽事</span>
+                        </div>
+                    </a>
+                    <a href="announce-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_announce size-32"></span>
+                            <span>公告</span>
+                        </div>
+                    </a>
+                    <a href="forum-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_forum size-32"></span>
+                            <span>論壇</span>
+                        </div>
+                    </a>
+                    <a href="my.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_my size-32"></span>
+                            <span>我的</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper ">
+            <!-- Toolbar -->
+            <section class="section toolbar">
+                <div class="container">
+                    <div class="ic-wrap jc-sb W-100">
+                        <div class="backer-wrap">
+                            <a href="#!" onclick="goBack()" class="ic-wrap size-32">
+                                <i class="fas fa-chevron-left"></i>
+                                <!-- <span>返回</span> -->
+                            </a>
+                        </div>
+                        <div class="toolbar-title">
+                            <span>報名與比賽教學</span>
+                        </div>
+                        <!-- 此外框一定要留著 -->
+                        <div class="func-wrap">
+                            <!-- - -->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- 報名與比賽教學 -->
+            <section class="section">
+                <div class="container">
+                    <div class="sep-item frame">
+                        <!-- 報名教學 -->
+                        <a href="#!" class="btn btn__chevron-txt alert-opener" alert-to="signup" badge>
+                            <div class="btn-left">
+                                <div class="item-title">報名教學</div>
+                            </div>
+                            <div class="btn-right">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <!-- 比賽教學 -->
+                        <a href="#!" class="btn btn__chevron-txt alert-opener" alert-to="match" badge>
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">比賽教學</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <footer class="">
+            <div class="container">
+                <div class="copyright">
+                    <span>© 2020 Taiwan Mobile all right reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Alert Box 報名教學-->
+    <div class="alert-box signup" id="">
+        <div class="box-container">
+            <div class="cs-wrap">
+                <div class="txt-right">
+                    <a href="#!" class="box-closer alert-closer">
+                        <div class="ratio ratio__1-1">
+                            <img src="img/ic_close.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="signup-tutorial-carousel owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="img/tutorial/01.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/02.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/03.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/04.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/05.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/06.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/07.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/08.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/09.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/10.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/11.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/12.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/13.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/14.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/15.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/16.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/17.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/18.png" alt="">
+                    </div>
+                </div>
+                <div class="signup owl-theme">
+                    <div class="owl-controls">
+                        <div class="custom-nav owl-nav"></div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="page-wrap">
+                        <span class="pg-num">1</span>
+                        <span>/</span>
+                        <span class="res">18</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Alert Box 比賽教學-->
+    <div class="alert-box match" id="">
+        <div class="box-container">
+            <div class="cs-wrap">
+                <div class="txt-right">
+                    <a href="#!" class="box-closer alert-closer">
+                        <div class="ratio ratio__1-1">
+                            <img src="img/ic_close.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="match-tutorial-carousel owl-carousel owl-theme">
+                    
+                    <div class="item">
+                        <img src="img/tutorial/19.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/20.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/21.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/22.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/23.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/24.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/tutorial/25.png" alt="">
+                    </div>
+                </div>
+                <div class="match owl-theme">
+                    <div class="owl-controls">
+                        <div class="custom-nav-m owl-nav"></div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="page-wrap">
+                        <span class="pg-num">1</span>
+                        <span>/</span>
+                        <span class="res">7</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- simplebar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.2.1/simplebar.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.2.1/simplebar.min.js"></script>
+    <script src="js/dragscroll.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+        <!-- owlCarousel2 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function () {
+            $(".signup-tutorial-carousel").owlCarousel({
+                center: true,
+                items: 1,
+                loop:false,
+                nav: true,
+                navText: [
+                    '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+                    '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+                ],
+                navContainer: '.custom-nav',
+                dots: false,
+                margin:10,
+                mouseDrag: false,
+            });
+            setTimeout(
+                $(".match-tutorial-carousel").owlCarousel({
+                    center: true,
+                    items: 1,
+                    loop:false,
+                    nav: true,  
+                    navText: [
+                        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+                        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+                    ],
+                    navContainer: '.custom-nav-m',
+                    dots: false,
+                    margin:10,
+                    mouseDrag: false,
+                })
+            , 100)
+            let num = $('.pg-num').html();
+            $('.owl-next').click(function(){
+                num ++
+                $('.pg-num').html(num);
+                let res = $(this).parents('.signup.owl-theme').siblings('.pagination').find('.res').html();
+                if (num > res) {
+                    num = res;
+                    $('.pg-num').html(num);}
+                if (num < 1) {
+                    num = 1;
+                    $('.pg-num').html(num);}
+            })
+            $('.owl-prev').click(function(){
+                num --
+                let res = $(this).parents('.signup.owl-theme').siblings('.pagination').find('.res').html();
+                $('.pg-num').html(num);
+                if (num > res) {
+                    num = res;
+                    $('.pg-num').html(num);}
+                if (num < 1) {
+                    num = 1;
+                    $('.pg-num').html(num);}
+            })
+            $('.box-closer').click(function(){
+                location.reload();
+                $('.alert-box').hide();
+            })
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 選擇項目會因為遊戲變動：目前只有VALORANT>選擇地圖或選擇攻守方兩個選擇 -->
+    <title>{Tournament Page}比賽報到 - 選擇地圖 - House of Gamers</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="{網頁標題}">
+    <meta itemprop="image" content="[網頁縮圖_1200x628]">
+    <meta name="description" content="{網頁內容敘述}" />
+    <!--FB info-->
+    <meta property="og:title" content="{網頁標題}" />
+    <meta property="og:site_name" content="[網站名稱]" />
+    <meta property="og:url" content="[網頁網址_URL]">
+    <meta property="og:image" content="[網頁縮圖_1200x628]">
+    <meta property="og:description" content="{網頁內容敘述}">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/update.css">
+</head>
+
+<body>
+    <div class="app" data-simplebar>
+        <!-- 主選單 Tapbar -->
+        <div class="nav">
+            <div class="nav-wrap">
+                <div class="nav-item-wrap">
+                    <a href="index.html" class="nav-item">
+                        <span class="pic logo"></span>
+                    </a>
+                    <a href="index.html" class="nav-item active">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_home size-32"></span>
+                            <span>首頁</span>
+                        </div>
+                    </a>
+                    <a href="tournament-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_cup size-32"></span>
+                            <span>賽事</span>
+                        </div>
+                    </a>
+                    <a href="announce-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_announce size-32"></span>
+                            <span>公告</span>
+                        </div>
+                    </a>
+                    <a href="forum-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_forum size-32"></span>
+                            <span>論壇</span>
+                        </div>
+                    </a>
+                    <a href="my.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_my size-32"></span>
+                            <span>我的</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <!-- Toolbar -->
+            <section class="section toolbar">
+                <div class="container">
+                    <div class="ic-wrap jc-sb W-100">
+                        <div class="backer-wrap">
+                            <a href="#!" onclick="goBack()" class="ic-wrap size-32">
+                                <i class="fas fa-chevron-left"></i>
+                                <!-- <span>返回</span> -->
+                            </a>
+                        </div>
+                        <div class="toolbar-title">
+                            <span>戰隊名稱 ( Riot#IDCODE ) </span>
+                        </div>
+                        <!-- 此外框一定要留著 -->
+                        <div class="func-wrap">
+                            <div class="msg-cm-more ic-wrap alert-opener" alert-to="commentsMoreAction">
+                                <img src="img/ic_more.svg" alt="" class="ic-more sm">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- 管理隊伍 -->
+            <section class="section">
+                <div class="container">
+                    <div class="W-100 dynamic-center ic-wrap vt ai-fs jc-fs chat" id="matchChat">
+                        <!-- 留言內容 -->
+                        <div class="msg W-100">
+                            <div class="sep-item">
+                                <div class="btn btn__txt free ai-fs msgb btn__chat">
+                                    <div class="btn-left ic-wrap jc-fs">
+                                        <div class="user-thumb">
+                                            <div class="ratio ratio__1-1">
+                                                <img src="img/pic_preset_thumbnail.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-right W-100">
+                                        <div class="item-subtitle sm ic-wrap jc-fs">
+                                            <span mr>使用者名稱</span>
+                                            <span>2小時</span>
+                                        </div>
+                                        <div class="simple-line">
+                                            <p>上次喬不攏時間，要不要談一下？</p>
+                                        </div>
+                                    </div>
+                                    <div class="systxt err"><span>{錯誤訊息}</span></div>
+                                </div>
+                            </div>
+                            <div class="sep-item">
+                                <div class="btn btn__txt free ai-fs msgb btn__chat">
+                                    <div class="btn-left ic-wrap jc-fs">
+                                        <div class="user-thumb">
+                                            <div class="ratio ratio__1-1">
+                                                <img src="img/pic_preset_thumbnail.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-right W-100">
+                                        <div class="item-subtitle sm ic-wrap jc-fs">
+                                            <span mr>使用者名稱</span>
+                                            <span>2小時</span>
+                                        </div>
+                                        <div class="simple-line">
+                                            <p>上次喬不攏時間，要不要談一下？</p>
+                                        </div>
+                                    </div>
+                                    <div class="systxt err"><span>{錯誤訊息}</span></div>
+                                </div>
+                            </div>
+                            <div class="sep-item">
+                                <div class="btn btn__txt free ai-fs msgb btn__chat">
+                                    <div class="btn-left ic-wrap jc-fs">
+                                        <div class="user-thumb">
+                                            <div class="ratio ratio__1-1">
+                                                <img src="img/pic_preset_thumbnail.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-right W-100">
+                                        <div class="item-subtitle sm ic-wrap jc-fs">
+                                            <span mr>使用者名稱</span>
+                                            <span>2小時</span>
+                                        </div>
+                                        <div class="simple-line">
+                                            <p>上次喬不攏時間，要不要談一下？</p>
+                                            <a href="https://pbs.twimg.com/media/EiXnxFkXYAA2Uy9?format=jpg&name=4096x4096" target="_blank"><img src="https://pbs.twimg.com/media/EiXnxFkXYAA2Uy9?format=jpg&name=4096x4096" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="systxt err"><span>{錯誤訊息}</span></div>
+                                </div>
+                            </div>
+                            <div class="sep-item me">
+                                <div class="btn btn__txt free ai-fs msgb btn__chat">
+                                    <div class="btn-left ic-wrap jc-fs">
+                                        <div class="user-thumb">
+                                            <div class="ratio ratio__1-1">
+                                                <img src="img/pic_preset_thumbnail.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-right W-100">
+                                        <div class="item-subtitle sm ic-wrap jc-fs">
+                                            <span mr>使用者名稱</span>
+                                            <span>2小時</span>
+                                        </div>
+                                        <div class="simple-line">
+                                            <p>上次喬不攏時間，要不要談一下？</p>
+                                        </div>
+                                    </div>
+                                    <div class="systxt err"><span>{錯誤訊息}</span></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- 沒有訊息的情況 -->
+                        <!-- <div class="nomsg W-100">
+                            <div class="item-subtitle txt-center"><span>可以開始傳訊息了！</span></div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+            <div class="submit-zone">
+                <div class="container">
+                    <div class="sep-item mt-0">
+                        <a class="btn btn__txt free">
+                            <div class="btn-left">
+                                <div class="user-thumb">
+                                    <div class="ratio ratio__1-1">
+                                        <img src="img/pic_preset_thumbnail.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-right W-100">
+                                <div class="ic-wrap W-100 jc-sb">
+                                    <input class="item-subtitle" type="text" placeholder="新增公開留言..."></input>
+                                    <span class="hot-spot ic-wrap"><i class="fas fa-paper-plane"></i></span>
+                                </div>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="">
+            <div class="container">
+                <div class="copyright">
+                    <span>© 2020 Taiwan Mobile all right reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Alert Box 對留言更多動作-->
+    <div class="alert-box" id="commentsMoreAction">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header ic-wrap jc-sb W-100">
+                    <div class="header-left ic-wrap">
+                        <div class="share-thumb">
+                            <div class="ratio ratio__1-1">
+                                <img src="https://via.placeholder.com/1200x628" alt="">
+                            </div>
+                        </div>
+                        <div class="share-title-wrap">
+                            <div class=" sm"><span>聊天室</span></div>
+                            <div class="item-title"><span>戰隊名稱(RIOT#CODE)</span></div>
+                        </div>
+                    </div>
+                    <div class="header-right ic-wrap">
+                        <a href="#!" class="box-closer alert-closer">
+                            <div class="ratio ratio__1-1">
+                                <img src="img/ic_close.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-divi"></div>
+                <div class="box-body">
+                    <div class="item-subtitle"><span>對此聊天室執行動作</span></div>
+                    <div class="article-more-action-wrap">
+                        <a href="report.html" class="article-more-action">
+                            <span>檢舉聊天室</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- simplebar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.2.1/simplebar.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.2.1/simplebar.min.js"></script>
+    <script src="js/dragscroll.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function () {});
+    </script>
+
+</body>
+
+</html>

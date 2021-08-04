@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="btn-emo" transform="translate(-148 -683)">
+    <g id="Rectangle_88" data-name="Rectangle 88" transform="translate(148 683)" fill="rgba(0,122,87,0.5)" stroke="#00ffb5" stroke-width="1">
+      <rect width="48" height="48" rx="24" stroke="none"/>
+      <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="none"/>
+    </g>
+    <path id="smile-wink-solid" d="M0,16A8,8,0,1,0,8,8,8,8,0,0,0,0,16Zm6.452-1.548a1.032,1.032,0,1,1-1.032-1.032A1.031,1.031,0,0,1,6.452,14.452Zm5.113.532a1.675,1.675,0,0,0-1.968,0l-.306.274a.386.386,0,0,1-.639-.348,1.94,1.94,0,0,1,1.932-1.358,1.94,1.94,0,0,1,1.932,1.358.386.386,0,0,1-.639.348ZM5.09,18.252a3.79,3.79,0,0,0,5.819,0,.517.517,0,0,1,.794.661,4.822,4.822,0,0,1-7.406,0,.515.515,0,0,1,.794-.658Z" transform="translate(164 691)" fill="#fff"/>
+  </g>
+</svg>
