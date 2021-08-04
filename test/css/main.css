@@ -167,6 +167,10 @@ div:empty:before {
 .btn__txt, a.btn__txt, label.btn__txt, .dropdown__txt {
     flex: 1;
 }
+div[contenteditable] {
+    -webkit-user-select: text;
+    user-select: text;
+}
   
 @media (max-width: 1065px) {
     .status-tag {
