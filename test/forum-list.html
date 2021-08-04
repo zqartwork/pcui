@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>玩家論壇 - House of Gamers</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="{網頁標題}">
+    <meta itemprop="image" content="[網頁縮圖_1200x628]">
+    <meta name="description" content="{網頁內容敘述}" />
+    <!--FB info-->
+    <meta property="og:title" content="{網頁標題}" />
+    <meta property="og:site_name" content="[網站名稱]" />
+    <meta property="og:url" content="[網頁網址_URL]">
+    <meta property="og:image" content="[網頁縮圖_1200x628]">
+    <meta property="og:description" content="{網頁內容敘述}">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/update.css">
+</head>
+
+<body>
+    <div class="app" data-simplebar>
+        <!-- 主選單 Tapbar -->
+        <div class="nav">
+            <div class="nav-wrap">
+                <div class="nav-item-wrap">
+                    <a href="index.html" class="nav-item">
+                        <span class="pic logo"></span>
+                    </a>
+                    <a href="index.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_home size-32"></span>
+                            <span>首頁</span>
+                        </div>
+                    </a>
+                    <a href="tournament-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_cup size-32"></span>
+                            <span>賽事</span>
+                        </div>
+                    </a>
+                    <a href="announce-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_announce size-32"></span>
+                            <span>公告</span>
+                        </div>
+                    </a>
+                    <a href="forum-list.html" class="nav-item active">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_forum size-32"></span>
+                            <span>論壇</span>
+                        </div>
+                    </a>
+                    <a href="my.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_my size-32"></span>
+                            <span>我的</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <!-- Toolbar -->
+            <section class="section toolbar">
+                <div class="container">
+                    <div class="ic-wrap jc-sb W-100 ">
+                        <div class="item-title-wrap">
+                            <a href="my.html" class="ic-wrap">
+                                <!-- 在 ic-wrap內的物件，只要標註上 即會有 margin-right: 10px; 的性質 -->
+                                <img src="img/pic_preset_thumbnail.svg" alt="" class="index-thumb" mr>
+                                <span class="item-title">Hi, 使用者名稱</span>
+                            </a>
+                        </div>
+                        <!-- func-wrap 此外框一定要留著 -->
+                        <div class="func-wrap">
+                            <!-- 通知 -->
+                            <a href="notification.html" class="func-item">
+                                <span class="icon-ic_notice size-32 active"></span>
+                            </a>
+                            <!-- 搜尋 -->
+                            <a href="search.html" class="func-item">
+                                <span class="icon-ic_search size-32"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 內容列表 -->
+            <section class="section index-contents">
+                <div class="index-content-item-wrap">
+                    <div class="container">
+                        <div class="item-extitle sep-item l"><span>玩家論壇</span></div>
+                    </div>
+                    <!-- 玩家論壇類別 -->
+                    <div class="container sp">
+                        <!-- Mid Tapbar -->
+                        <div class="mid-tapbar-wrap">
+                            <a href="#!" class="tapbar-item active" ct="sort"><span>分類總覽</span></a>
+                            <a href="#!" class="tapbar-item" ct="hot"><span>熱門話題</span></a>
+                            <a href="#!" class="tapbar-item" ct="heart"><span>收藏</span></a>
+                        </div>
+                    </div>
+                    <!-- 分類總覽 -->
+                    <div class="ct-item sort index-item-wrap ic-wrap jc-fs ai-fs W-100">
+                        <div class="container">
+                            <!-- 公告類別 -->
+                            <a href="forum-inner-list.html" class="index-item forum-sort main">
+                                <div class="inner-wrap">
+                                    <div class="item-header">
+                                        <div class=" item-img-frame ratio ratio__16-9">
+                                            <img src="img/forum-sort-lor.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <span>符文大地傳說</span>
+                                        </div>
+                                        <div class="item-subtitle sm ic-wrap W-100 jc-sb forum">
+                                            <span>最新版本擴充：險惡碼頭，快點手刀組牌來爬分吧！</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="forum-inner-list.html" class="index-item forum-sort main">
+                                <div class="inner-wrap">
+                                    <div class="item-header">
+                                        <div class=" item-img-frame ratio ratio__16-9">
+                                            <img src="img/forum-sort-vlr.jfif"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <span>特戰英豪</span>
+                                        </div>
+                                        <div class="item-subtitle sm ic-wrap W-100 jc-sb forum">
+                                            <span>萬眾矚目的英雄聯盟手遊終於在台灣上線啦！萬眾矚目的英雄聯盟手遊終於在台灣上線啦！萬眾矚目的英雄聯盟手遊終於在台灣上線啦！...</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="forum-inner-list.html" class="index-item forum-sort main">
+                                <div class="inner-wrap">
+                                    <div class="item-header">
+                                        <div class=" item-img-frame ratio ratio__16-9">
+                                            <img src="img/forum-sort-wr.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <span>英雄聯盟：激鬥峽谷</span>
+                                        </div>
+                                        <div class="item-subtitle sm ic-wrap W-100 jc-sb forum">
+                                            <span>萬眾矚目的英雄聯盟手遊終於在台灣上線啦！</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 熱門話題 -->
+                    <div class="ct-item hot index-item-wrap ic-wrap jc-fs ai-fs W-100">
+                        <div class="container">
+                            <a href="forum-page.html" class="index-item forum-sort forum-article-item">
+                                <div class="inner-wrap">
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <div class="status-tag ic-wrap forum-type"mr>
+                                                <span>閒聊</span>
+                                            </div>
+                                            <span>文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過</span>
+                                        </div>
+                                        <div class="item-subtitle sm ic-wrap W-100 jc-sb forum">
+                                            <span class="simplify-msg">文章內容如果沒有圖片，會顯示兩行內容作為預覽部分，顯示在外部的這個位置裡面。文章內容如果沒有圖片，會顯示兩行內容作為預覽部分，顯示在外部的這個位置裡面。文章內容如果沒有圖片，會顯示兩行內容作為預覽部分，顯示在外部的這個位置裡面。</span>
+                                        </div>
+                                        <div class="item-subtitle sm ic-wrap W-100 jc-sb forum">
+                                            <div class="l ic-wrap">
+                                                <div class="ic-wrap fr-btn" mr>
+                                                    <img src="img/ic_like.svg" alt="" class="ic-like">
+                                                    <span>10</span>
+                                                </div>
+                                                <div class="ic-wrap fr-btn" mr>
+                                                    <img src="img/ic_comments.svg" alt="" class="ic-comments">
+                                                    <span>10</span>
+                                                </div>
+                                            </div>
+                                            <div class="r ic-wrap">
+                                                <span>Taiwan Mobile</span>
+                                                <span>‧</span>
+                                                <span>2小時前</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 收藏 -->
+                    <div class="ct-item heart index-item-wrap ic-wrap jc-fs ai-fs W-100">
+                        <div class="container">
+                            <a href="forum-page.html" class="index-item forum-sort forum-article-item">
+                                <div class="inner-wrap">
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <div class="status-tag ic-wrap forum-type"mr>
+                                                <span>閒聊</span>
+                                            </div>
+                                            <span>文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過</span>
+                                        </div>
+                                        <div class="item-subtitle sm ic-wrap W-100 jc-sb forum">
+                                            <span class="simplify-msg">文章內容如果沒有圖片，會顯示兩行內容作為預覽部分，顯示在外部的這個位置裡面。文章內容如果沒有圖片，會顯示兩行內容作為預覽部分，顯示在外部的這個位置裡面。文章內容如果沒有圖片，會顯示兩行內容作為預覽部分，顯示在外部的這個位置裡面。</span>
+                                        </div>
+                                        <div class="item-subtitle sm ic-wrap W-100 jc-sb forum">
+                                            <div class="l ic-wrap">
+                                                <div class="ic-wrap fr-btn" mr>
+                                                    <img src="img/ic_like.svg" alt="" class="ic-like">
+                                                    <span>10</span>
+                                                </div>
+                                                <div class="ic-wrap fr-btn" mr>
+                                                    <img src="img/ic_comments.svg" alt="" class="ic-comments">
+                                                    <span>10</span>
+                                                </div>
+                                            </div>
+                                            <div class="r ic-wrap">
+                                                <span>Taiwan Mobile</span>
+                                                <span>‧</span>
+                                                <span>2小時前</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="forum-page.html" class="index-item forum-sort forum-article-item">
+                                <div class="inner-wrap">
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <div class="status-tag ic-wrap forum-type"mr>
+                                                <span>閒聊</span>
+                                            </div>
+                                            <span>文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過</span>
+                                        </div>
+                                        <div class="item-subtitle sm ic-wrap W-100 jc-sb forum">
+                                            <span class="simplify-msg">文章內容如果沒有圖片，會顯示兩行內容作為預覽部分，顯示在外部的這個位置裡面。文章內容如果沒有圖片，會顯示兩行內容作為預覽部分，顯示在外部的這個位置裡面。文章內容如果沒有圖片，會顯示兩行內容作為預覽部分，顯示在外部的這個位置裡面。</span>
+                                        </div>
+                                        <div class="item-subtitle sm ic-wrap W-100 jc-sb forum">
+                                            <div class="l ic-wrap">
+                                                <div class="ic-wrap fr-btn" mr>
+                                                    <img src="img/ic_like.svg" alt="" class="ic-like">
+                                                    <span>10</span>
+                                                </div>
+                                                <div class="ic-wrap fr-btn" mr>
+                                                    <img src="img/ic_comments.svg" alt="" class="ic-comments">
+                                                    <span>10</span>
+                                                </div>
+                                            </div>
+                                            <div class="r ic-wrap">
+                                                <span>Taiwan Mobile</span>
+                                                <span>‧</span>
+                                                <span>2小時前</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="forum-page.html" class="index-item forum-sort forum-article-item">
+                                <div class="inner-wrap">
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <div class="status-tag ic-wrap forum-type"mr>
+                                                <span>閒聊</span>
+                                            </div>
+                                            <span>文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過</span>
+                                        </div>
+                                        <div class="item-subtitle sm ic-wrap W-100 jc-sb forum">
+                                            <span class="simplify-msg">文章內容如果沒有圖片，會顯示兩行內容作為預覽部分，顯示在外部的這個位置裡面。文章內容如果沒有圖片，會顯示兩行內容作為預覽部分，顯示在外部的這個位置裡面。文章內容如果沒有圖片，會顯示兩行內容作為預覽部分，顯示在外部的這個位置裡面。</span>
+                                        </div>
+                                        <div class="item-subtitle sm ic-wrap W-100 jc-sb forum">
+                                            <div class="l ic-wrap">
+                                                <div class="ic-wrap fr-btn" mr>
+                                                    <img src="img/ic_like.svg" alt="" class="ic-like">
+                                                    <span>10</span>
+                                                </div>
+                                                <div class="ic-wrap fr-btn" mr>
+                                                    <img src="img/ic_comments.svg" alt="" class="ic-comments">
+                                                    <span>10</span>
+                                                </div>
+                                            </div>
+                                            <div class="r ic-wrap">
+                                                <span>Taiwan Mobile</span>
+                                                <span>‧</span>
+                                                <span>2小時前</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="forum-page.html" class="index-item forum-sort forum-article-item">
+                                <div class="inner-wrap">
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <div class="status-tag ic-wrap forum-type"mr>
+                                                <span>閒聊</span>
+                                            </div>
+                                            <div class="status-tag ic-wrap forum-type"mr>
+                                                <span>閒聊</span>
+                                            </div>
+                                            <div class="status-tag ic-wrap forum-type"mr>
+                                                <span>閒聊</span>
+                                            </div>
+                                            
+                                            <span>文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過文章標題顯示於此，標題不可超過</span>
+                                        </div>
+                                        <div class="item-subtitle sm ic-wrap W-100 jc-sb forum">
+                                            <span class="simplify-msg"></span>
+                                        </div>
+                                        <div class="item-subtitle sm ic-wrap W-100 jc-sb forum">
+                                            <div class="l ic-wrap">
+                                                <div class="ic-wrap fr-btn" mr>
+                                                    <img src="img/ic_like.svg" alt="" class="ic-like">
+                                                    <span>10</span>
+                                                </div>
+                                                <div class="ic-wrap fr-btn" mr>
+                                                    <img src="img/ic_comments.svg" alt="" class="ic-comments">
+                                                    <span>10</span>
+                                                </div>
+                                            </div>
+                                            <div class="r ic-wrap">
+                                                <span>Taiwan Mobile</span>
+                                                <span>‧</span>
+                                                <span>2小時前</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- sticky footer must stay out here -->
+        <footer>
+            <div class="container">
+                <div class="copyright">
+                    <span>© 2020 Taiwan Mobile all right reserved.</span>
+                    <a href="#!" class="for-admin ic-wrap"><i class="fas fa-cog"></i><span>進入後台</span></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- simplebar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.2.1/simplebar.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.2.1/simplebar.min.js"></script>
+    <script src="js/dragscroll.js"></script>
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function () {
+        });
+    </script>
+
+</body>
+
+</html>

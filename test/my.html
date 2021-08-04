@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的會員選單 - House of Gamers</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="{網頁標題}">
+    <meta itemprop="image" content="[網頁縮圖_1200x628]">
+    <meta name="description" content="{網頁內容敘述}" />
+    <!--FB info-->
+    <meta property="og:title" content="{網頁標題}" />
+    <meta property="og:site_name" content="[網站名稱]" />
+    <meta property="og:url" content="[網頁網址_URL]">
+    <meta property="og:image" content="[網頁縮圖_1200x628]">
+    <meta property="og:description" content="{網頁內容敘述}">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/update.css">
+</head>
+
+<body>
+    <div class="app" data-simplebar>
+        <!-- 主選單 Tapbar -->
+        <div class="nav">
+            <div class="nav-wrap">
+                <div class="nav-item-wrap">
+                    <a href="index.html" class="nav-item">
+                        <span class="pic logo"></span>
+                    </a>
+                    <a href="index.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_home size-32"></span>
+                            <span>首頁</span>
+                        </div>
+                    </a>
+                    <a href="tournament-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_cup size-32"></span>
+                            <span>賽事</span>
+                        </div>
+                    </a>
+                    <a href="announce-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_announce size-32"></span>
+                            <span>公告</span>
+                        </div>
+                    </a>
+                    <a href="forum-list.html" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_forum size-32"></span>
+                            <span>論壇</span>
+                        </div>
+                    </a>
+                    <a href="my.html" class="nav-item active">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_my size-32"></span>
+                            <span>我的</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper ">
+            <!-- Toolbar -->
+            <section class="section">
+                <div class="container">
+                    <div class="my-wrap ic-wrap vt W-100">
+                        <div class="my-header-thumb">
+                            <div class="ratio ratio__1-1 round">
+                                <img src="img/pic_preset_thumbnail.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="my-name-set sep-item m">
+                            <div class="item-title txt-center"><span>名稱最多8個字元</span></div>
+                            <div class="item-subtitle sm txt-center"><span>UID:ABCD1234567890</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 會員選單 -->
+            <section class="section">
+                <div class="container">
+                    <div class="sep-item frame md">
+                        <!-- 會員與遊戲帳號設定 -->
+                        <div class="item-subtitle sm">
+                            <div class="ic-wrap">
+                                <span>會員主選單</span>
+                            </div>
+                        </div>
+                        <a href="account.html" class="btn btn__chevron-txt" badge>
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">會員與遊戲帳號設定</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <!-- 隊伍管理 -->
+                        <a href="team.html" class="btn btn__chevron-txt" badge>
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">隊伍管理</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <!-- 賽事管理 -->
+                        <a href="tourna-admin.html" class="btn btn__chevron-txt" badge>
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">賽事管理</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <!-- 已報名賽事 -->
+                        <a href="list-of-signups.html" class="btn btn__chevron-txt">
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">已報名賽事</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <!-- 領取比賽獎勵 -->
+                        <a href="list-of-match-reward.html" class="btn btn__chevron-txt">
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">領取比賽獎勵</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <!-- 問題回報 -->
+                        <a href="report.html" class="btn btn__chevron-txt">
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">問題回報</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                    </div>
+                    <div class="sep-item frame md">
+                        <div class="item-subtitle sm">
+                            <div class="ic-wrap">
+                                <span>其他</span>
+                            </div>
+                        </div>
+                        <!-- 隱私權條款 -->
+                        <a href="trems.html" class="btn btn__chevron-txt">
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">服務條款</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <!-- 版本資訊 -->
+                        <a href="version-info.html" class="btn btn__chevron-txt">
+                            <div class="btn-left ic-wrap">
+                                <div class="item-title">版本資訊</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                    </div>
+                    <div class="sep-item frame md">
+                        <!-- <a href="#!" class="btn btn__primary round">
+                                <span>登入</span>
+                            </a> -->
+                        <a href="#!" class="btn btn__normal round alert-opener" alert-to="signOut">
+                            <span>登出</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="">
+            <div class="container">
+                <div class="copyright">
+                    <span>© 2020 Taiwan Mobile all right reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Alert Box 確認已訂定之比賽時間-->
+    <div class="alert-box" id="signOut">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header">
+                    <div class="item-title">登出</div>
+                </div>
+                <div class="box-body">
+                    <div class="msg">
+                        <p>您即將登出 House of Gamers。</p>
+                    </div>
+                </div>
+                <div class="box-divi"></div>
+                <div class="box-footer">
+                    <div class="ic-wrap jc-sb W-100 db">
+                        <a href="#!" class="box-confirm blue alert-closer txt-center W-100">
+                            <span>取消</span>
+                             
+                        </a>
+                        <a href="#!" class="box-confirm red alert-closer txt-center W-100">
+                            <span>登出</span>
+                             
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- simplebar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.2.1/simplebar.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.2.1/simplebar.min.js"></script>
+    <script src="js/dragscroll.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function () {});
+    </script>
+
+</body>
+
+</html>
