@@ -164,15 +164,14 @@ div:empty:before {
     word-break: break-all;
     max-width: 552px;
 }
-.btn__txt, a.btn__txt, label.btn__txt, .dropdown__txt, .ic-wrap,
-.btn__txt.free .btn-left, a.btn__txt.free .btn-left, label.btn__txt.free .btn-left, .dropdown__txt.free .btn-left {
+.btn__txt, a.btn__txt, label.btn__txt, .dropdown__txt {
     flex: 1;
 }
 div[contenteditable] {
     -webkit-user-select: text;
     user-select: text;
 }
-.btn .user-thumb, a.btn .user-thumb, label.btn .user-thumb, .dropdown .user-thumb {
+.btn .user-thumb, a.btn .user-thumb, label.btn .user-thumb, .dropdown .user-thumb, .msgb .btn-left {
     max-width: 24px;
     max-height: 24px;
 }
