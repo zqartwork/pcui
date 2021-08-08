@@ -179,6 +179,10 @@ div[contenteditable] {
     display: inline-flex;
     width: auto;
     flex: 1;
+    justify-content: flex-start;
+}
+.dot.comment {
+    width: 5px;
 }
   
 @media (max-width: 1065px) {
