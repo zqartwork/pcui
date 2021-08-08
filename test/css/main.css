@@ -171,6 +171,10 @@ div[contenteditable] {
     -webkit-user-select: text;
     user-select: text;
 }
+.btn .user-thumb, a.btn .user-thumb, label.btn .user-thumb, .dropdown .user-thumb {
+    max-width: 24px;
+    max-height: 24px;
+}
   
 @media (max-width: 1065px) {
     .status-tag {
