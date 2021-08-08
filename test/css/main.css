@@ -175,7 +175,7 @@ div[contenteditable] {
     max-width: 24px;
     max-height: 24px;
 }
-.msgb .item-subtitle.sm span {
+.item-subtitle.sm * {
     display: inline-flex;
     width: auto;
     flex: 1;
