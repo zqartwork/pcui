@@ -175,7 +175,7 @@ div[contenteditable] {
     max-width: 24px;
     max-height: 24px;
 }
-.item-subtitle.sm span {
+/* .item-subtitle.sm span {
     display: inline-flex;
     width: auto;
     flex: 1;
@@ -183,7 +183,7 @@ div[contenteditable] {
 }
 .dot.comment {
     width: 5px !important;
-}
+} */
   
 @media (max-width: 1065px) {
     .status-tag {
