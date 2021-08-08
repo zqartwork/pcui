@@ -164,7 +164,8 @@ div:empty:before {
     word-break: break-all;
     max-width: 552px;
 }
-.btn__txt, a.btn__txt, label.btn__txt, .dropdown__txt, .ic-wrap {
+.btn__txt, a.btn__txt, label.btn__txt, .dropdown__txt, .ic-wrap,
+.btn__txt.free .btn-left, a.btn__txt.free .btn-left, label.btn__txt.free .btn-left, .dropdown__txt.free .btn-left {
     flex: 1;
 }
 div[contenteditable] {
