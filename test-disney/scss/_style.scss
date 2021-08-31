@@ -617,7 +617,7 @@ KV
 }
 .kv-container {
     width: 100%;
-    height: calc((849 / 2560) * 100vw);
+    height: calc((800 / 2560) * 100vw);
 
     background-image: url(../img/index-asset/bn-for-web.jpg);
     background-size: contain;
@@ -644,6 +644,11 @@ KV
         color: $primary-white;
         font-weight: 700;
         font-size: 6.4rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+    .subtitle {
+        font-size: 2vw;
     }
 }
 
@@ -655,7 +660,16 @@ KC
 #kc {
     position: relative;
     z-index: 2;
-    padding-top: calc((365 / 2560) * 100vw - (140 / 2560) * 100vw);
+    padding-top: calc((255 / 2560) * 100vw - (140 / 2560) * 100vw);
+    &::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-image: $primary-gradient;
+        top: 0;
+        left: 0;
+    }
 }
 .kc-container {
     width: calc(100% - 3rem);
