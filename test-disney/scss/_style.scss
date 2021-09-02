@@ -279,9 +279,12 @@ nav {
 
     .logo-wrap {
         position: relative;
-        width: 76.2rem;
-        height: 15rem;
+        width: calc((500 / 1920) * 100vw);
+        height: calc((100 / 1920) * 100vw);
         background-image: url(../img/index-asset/logo-brick-l.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -624,6 +627,18 @@ KV
     background-repeat: no-repeat;
 
     position: relative;
+}
+@media (max-width: 1366px) {
+    .kv-container {
+        height: calc((1080 / 1920) * 100vw);
+        background-image: url(../img/index-asset/1920x1080.jpg);
+    }
+}
+@media (max-width: 1024px) {
+    .kv-container {
+        height: calc((1330 / 1080) * 100vw);
+        background-image: url(../img/index-asset/1080x1080.jpg);
+    }
 }
 .kv-board {
     position: absolute;

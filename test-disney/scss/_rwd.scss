@@ -47,8 +47,8 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        width: 56.2rem;
-        height: 12rem;
+        width: calc((500 / 1024) * 100vw);
+        height: calc((100 / 1024) * 100vw);
     }
     nav .logo-wrap .lockup-arr-l {
         right: 100%;
@@ -79,10 +79,6 @@
 @media (max-width: 768px) {
     .subtxt {
         white-space: nowrap;
-    }
-    nav .logo-wrap {
-        width: 36rem;
-        height: 10rem;
     }
     .caption-content {
         flex-direction: column;
@@ -123,10 +119,6 @@
 @media (max-width: 500px) {
     .rw-img.thumb::before {
         top: -280%;
-    }
-    nav .logo-wrap {
-        height: calc((100 / 500) * 100vw);
-        width: calc((360 / 500) * 100vw);
     }
     .rw-wrapper .lockup-arr-l {
         right: calc(100% - 2rem);
