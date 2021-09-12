@@ -1651,7 +1651,7 @@ Plan Detail Table
 }
 .plan-banner-wrapper {
     background-color: $secondary-white;
-    padding-top: 12rem;
+    padding-top: 2rem;
 }
 .plan-banner-container {
     background-color: $secondary-white;
@@ -1673,7 +1673,7 @@ Plan Detail Table
 }
 @media (max-width: 1024px) {
     .plan-banner-wrapper {
-        padding-top: 8rem;
+        padding-top: 2rem;
     }
     .detail-banner {
         &.mobile {
@@ -1684,9 +1684,9 @@ Plan Detail Table
         }
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 500px) {
     .plan-banner-wrapper {
-        padding-top: 6rem;
+        padding-top: 0rem;
     }
 }
 .plan-details-container {
