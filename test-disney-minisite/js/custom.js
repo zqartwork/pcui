@@ -156,6 +156,12 @@ let switcher = function(){
         $('.tabD').addClass('active');
         $('.tabD').siblings().removeClass('active');
       }
+      if (window.location.href.indexOf("#E") > -1) {
+        $('#tabE').addClass('active');
+        $('#tabE').siblings().removeClass('active');
+        $('.tabE').addClass('active');
+        $('.tabE').siblings().removeClass('active');
+      }
     $('.switcher').click(function(){
         console.log($(this).attr('tab'))
         $($(this).attr('tab')).addClass('active');
@@ -163,4 +169,16 @@ let switcher = function(){
         $(this).addClass('active');
         $(this).siblings().removeClass('active');
     })
+}
+
+/*
+--------
+Ham
+--------
+*/
+let ham = function(){
+  $('.ham').click(function(){
+    $(this).toggleClass('active');
+    $('.nav-tab').toggle();
+  })
 }

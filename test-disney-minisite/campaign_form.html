@@ -54,7 +54,7 @@
                         <a href="index.html#introPlans" class="nav-tab anchor" data-scroll="introPlans"><span>方案介紹</span></a>
                         <a href="index.html#activeNow" class="nav-tab anchor" data-scroll="activeNow"><span>立即開通</span></a>
                         <a href="index.html#faq" class="nav-tab anchor" data-scroll="faq"><span>常見問題</span></a>
-                        <a href="campaign.html" class="nav-tab"><span>登錄好禮</span></a>
+                        <a href="campaign.html" class="nav-tab active"><span>登錄好禮</span></a>
                     </div>
                 </div>
             </nav>
@@ -64,34 +64,48 @@
                         <div class="news-article-banner-wrap">
                             <div class="ratio ratio__950-240">
                                 <div class="img-wrap">
-                                    <img src="https://via.placeholder.com/950x240/999999/888888/?text=Disney+.com" alt="">
+                                    <img src="https://via.placeholder.com/950x240/999999/888888/?text=BN CONTENT" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="news-article-title-wrap">
-                            <div class="time-tag">發佈時間 2021.10.14</div>
-                            <h1 class="title">與台灣大哥大一起迎接 Disney+ </h1>
-                            <h2 class="subtitle">
-                                告訴我們哪個 Disney+ 的內容最讓你期待？
-                                完成活動並留下資訊享第一手最新消息，還有機會獲得 Disney+ 品牌限定珍藏周邊
-                            </h2>
-                        </div>
-                        <div class="section-divi article"></div>
-                        <div class="news-article-content-wrap">
-                            <div class="txt-center prg">
-                                <span class="twm t-head">活動時間</span><span>2021.10.14 -2021.11.11</span>
-                            </div>
-                            <div class="txt-center">
-                                <a href="#!" class="primary-btn plan-detail">立即前往了解詳情</a>
-                            </div>
-                            <div class="prg">
-                                Disney+ 即將於 2021.11.12 隆重登場， 台灣大哥大將推出 Disney+ 5G 夢幻方案<br>
-                                現在參加『與台灣大哥大一起迎接 Disney+ 』活動，告訴我們你最期待的 Disney+ 內容並留下聯絡資訊，<br>
-                                將能在第一時間獲得最新消息，並且有機會獲得Disney+ 品牌限定珍藏周邊！
-                            </div>
-                            <div class="prg">
-                                <img src="https://via.placeholder.com/1920x1080/999999/888888/?text=Disney+.com" alt="">
-                            </div>
+                        <div class="news-article-title-wrap txt-center">
+                            <a href="" class="secondary-btn"><span>活動辦法</span></a>
+                            <form action="">
+                                <div class="cp-signup-form-section">
+                                    <div class="cpsu-form-wrapper">
+                                        <div class="cpsu-item-wrap">
+                                            <span class="cpsu-item-title">門號：</span>
+                                            <span class="cpsu-item-content">0900-000-000</span>
+                                        </div>
+                                        <div class="cpsu-item-wrap">
+                                            <label for="cars">領取店點：</label>
+                                            <select id="city" name="cars">
+                                                <option value="NA">縣市</option>
+                                                <option value="A">A</option>
+                                                <option value="B">B</option>
+                                                <option value="C">C</option>
+                                            </select>
+                                            <select id="district" name="cars">
+                                                <option value="NA">不分鄉鎮市區</option>
+                                                <option value="A">A</option>
+                                                <option value="B">B</option>
+                                                <option value="C">C</option>
+                                            </select>
+                                            <a href="#!" class="secondary-btn modal-opener" tt-to="search-result"><span>搜尋</span></a>
+                                        </div>
+                                        <div class="select-result twm">
+                                            已選擇：台北杭州南直營服務中心
+                                        </div>
+                                        <div class="cpsu-item-wrap">
+                                            <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                                            <label for="styled-checkbox-1">本人已閱讀 <a href="privacy.html" target="_blank" class="twm"><span class="nv">隱私權政策</span></a>  ，並確認訂購交易資料正確無誤</label>
+                                        </div>
+                                        <div class="txt-center">
+                                            <a href="campaign_result.html" class="primary-btn twm-btn"><span>確認送出</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -113,7 +127,37 @@
             </footer>
         </div>
     </div>
-
+    <div class="modal search-result" style="display: block;">
+        <div class="modal-container">
+            <div class="modal-closer modal-mask"></div>
+            <div class="modal-panel white">
+                <div class="modal-wrap">
+                    <a href="#!" class="modal-closer modal-close-btn">
+                        <i class="fas fa-times-circle"></i>
+                    </a>
+                    <div class="modal-header">
+                        <h1 class="modal-title">選擇門市</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="custom-radio-wrap">
+                            <p>
+                                <input type="radio" id="test1" name="radio-group" checked>
+                                <label for="test1"><span class="main">台北杭州南直營服務中心</span><span class="sub">台北市大安區杭州南路2段85號</span></label>
+                            </p>
+                            <p>
+                                <input type="radio" id="test2" name="radio-group">
+                                <label for="test2"><span class="main">台北杭州南直營服務中心</span><span class="sub">台北市大安區杭州南路2段85號</span></label>
+                            </p>
+                            <p>
+                                <input type="radio" id="test3" name="radio-group">
+                                <label for="test3"><span class="main">台北杭州南直營服務中心</span><span class="sub">台北市大安區杭州南路2段85號</span></label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <!-- FontAwesome -->
@@ -132,6 +176,7 @@
         $(document).ready(function() {
             new WOW().init();
             scrollTop();
+            modalFunction();
             ham();
         });
     </script>
