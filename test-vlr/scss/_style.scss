@@ -637,12 +637,15 @@ Custom Upload Files 自訂上傳檔案
     width: 100%;
 }
 .arti-item-wrap {
+    display: inline-flex;
+    justify-content: flex-start;
     img {
         max-width: 6rem;
     }
 }
 .arti-item {
     display: inline-flex;
+    justify-content: space-between;
 }
 .arti-title {
     max-width: 30rem;
