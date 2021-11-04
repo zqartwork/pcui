@@ -471,7 +471,7 @@ Modal
     text-align: right;
 }
 .modal-body {
-    max-height: 70vh;
+    max-height: 65vh;
     overflow: auto;
 }
 
@@ -658,6 +658,11 @@ Custom Upload Files 自訂上傳檔案
     width: calc((100% / 3 - 2rem));
     margin: 0 2rem 2rem 0;
 }
+.img-item {
+    img {
+        max-width: 80rem;
+    }
+}
 .arti-item {
     width: calc((100% / 2 - 2rem));
     margin: 0 1rem 1rem 0;
@@ -667,6 +672,7 @@ Custom Upload Files 自訂上傳檔案
     text-align: center;
     ul {
         display: inline-flex;
+        flex-wrap: wrap;
         li {
             margin: 2rem 0.3rem 0 0.3rem;
             a.pagination {
