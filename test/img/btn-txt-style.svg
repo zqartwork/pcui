@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-  <g id="btn-txt-style" transform="translate(-148 -683)">
-    <g id="Rectangle_88" data-name="Rectangle 88" transform="translate(148 683)" fill="rgba(0,122,87,0.5)" stroke="#00ffb5" stroke-width="1">
-      <rect width="48" height="48" rx="24" stroke="none"/>
-      <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="none"/>
-    </g>
-    <text id="T" transform="translate(166 714)" fill="#fff" font-size="18" font-family="Georgia-Bold, Georgia" font-weight="700"><tspan x="0" y="0">T</tspan></text>
-  </g>
-</svg>

@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <g id="ic_italic" transform="translate(-136 -683)">
-    <rect id="Rectangle_177" data-name="Rectangle 177" width="24" height="24" transform="translate(136 683)" fill="rgba(255,255,255,0)"/>
-    <path id="italic-solid" d="M9.436,32.472v.944a.472.472,0,0,1-.472.472H7.113L4.754,43.323H6.133a.472.472,0,0,1,.472.472v.944a.472.472,0,0,1-.472.472H.472A.472.472,0,0,1,0,44.738v-.944a.472.472,0,0,1,.472-.472H2.322l2.359-9.436H3.3a.472.472,0,0,1-.472-.472v-.944A.472.472,0,0,1,3.3,32H8.964A.472.472,0,0,1,9.436,32.472Z" transform="translate(143 656)" fill="#fff"/>
-  </g>
-</svg>

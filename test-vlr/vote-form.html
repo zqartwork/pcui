@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>特務週 - VALORANT</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="{網頁標題}">
+    <meta itemprop="image" content="[網頁縮圖_1200x628]">
+    <meta name="description" content="{網頁內容敘述}" />
+    <!--FB info-->
+    <meta property="og:title" content="{網頁標題}" />
+    <meta property="og:site_name" content="[網站名稱]" />
+    <meta property="og:url" content="[網頁網址_URL]">
+    <meta property="og:image" content="[網頁縮圖_1200x628]">
+    <meta property="og:description" content="{網頁內容敘述}">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link data-react-helmet="true" rel="icon" type="image/x-icon" href="https://playvalorant.com/static/favicon.3790df8e.ico">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- wow animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="wrapper">
+            <div id="gt" class="scrollTop">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <nav class="nav">
+                <div class="nav-wrapper">
+                    <a href="https://playvalorant.com/zh-tw/" class="nav-tab nav-logo"><img src="img/logos/vlr-logo-w-nav.svg" alt=""></a>
+                    <a href="index.html" class="nav-tab">首頁</a>
+                    <a href="signup.html" class="nav-tab">我要投稿</a>
+                    <a href="vote.html" class="nav-tab">我要投票</a>
+                    <a href="#!" class="nav-tab ham nav-opener"><img src="img/ham.svg" alt=""></a>
+                </div>
+            </nav>
+            <section class="section section__kv">
+                <img src="img/kv-banner/fg.png" alt="" class="fg wow fadeInUp" data-wow-delay=".3s">
+                <img src="img/kv-banner/slogan.png" alt="" class="slogan wow fadeInDown">
+                <img src="img/kv-banner/bg.png" alt="" class="bg wow fadeIn">
+            </section>
+            <section class="section section__method" id="signup">
+                <div class="container">
+                    <h1 class="section-title">我要投票<a href="#!" class="modal-opener sub" tt-to="voteMethod"><span>- 投稿說明</span></a></h1>
+                    <div class="content-wrapper">
+                        <div class="inner-wrapper">
+                            <div class="switch-content">
+                                <div class="switch-nav-tab-wrapper">
+                                    <a href="#!" class="switch-nav-tab switcher active" tab="#tabA"><span>影片剪輯</span></a>
+                                    <a href="#!" class="switch-nav-tab switcher" tab="#tabB"><span>圖片創作</span></a>
+                                    <a href="#!" class="switch-nav-tab switcher" tab="#tabC"><span>攻略文章</span></a>
+                                </div>
+                                <div class="switch-nav-content-wrapper">
+                                    <div class="switch-nav-content active" id="tabA">
+                                        <div class="video-item-section">
+                                            <div class="video-item">
+                                                <a href="https://youtu.be/F5tSoaJ93ac" target="_blank" class="video-item-wrap">
+                                                    <div class="ratio ratio__16-9">
+                                                        <img src="img/play.svg" alt="" class="play-icon">
+                                                        <div class="img-wrap">
+                                                            <img src="img/demo/video-thumb.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="video-item">
+                                                <a href="https://youtu.be/F5tSoaJ93ac" target="_blank" class="video-item-wrap">
+                                                    <div class="ratio ratio__16-9">
+                                                        <img src="img/play.svg" alt="" class="play-icon">
+                                                        <div class="img-wrap">
+                                                            <img src="img/demo/video-thumb.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="video-item">
+                                                <a href="https://youtu.be/F5tSoaJ93ac" target="_blank" class="video-item-wrap">
+                                                    <div class="ratio ratio__16-9">
+                                                        <img src="img/play.svg" alt="" class="play-icon">
+                                                        <div class="img-wrap">
+                                                            <img src="img/demo/video-thumb.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="video-item">
+                                                <a href="https://youtu.be/F5tSoaJ93ac" target="_blank" class="video-item-wrap">
+                                                    <div class="ratio ratio__16-9">
+                                                        <img src="img/play.svg" alt="" class="play-icon">
+                                                        <div class="img-wrap">
+                                                            <img src="img/demo/video-thumb.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="video-item">
+                                                <a href="https://youtu.be/F5tSoaJ93ac" target="_blank" class="video-item-wrap">
+                                                    <div class="ratio ratio__16-9">
+                                                        <img src="img/play.svg" alt="" class="play-icon">
+                                                        <div class="img-wrap">
+                                                            <img src="img/demo/video-thumb.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="video-item">
+                                                <a href="https://youtu.be/F5tSoaJ93ac" target="_blank" class="video-item-wrap">
+                                                    <div class="ratio ratio__16-9">
+                                                        <img src="img/play.svg" alt="" class="play-icon">
+                                                        <div class="img-wrap">
+                                                            <img src="img/demo/video-thumb.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="video-item">
+                                                <a href="https://youtu.be/F5tSoaJ93ac" target="_blank" class="video-item-wrap">
+                                                    <div class="ratio ratio__16-9">
+                                                        <img src="img/play.svg" alt="" class="play-icon">
+                                                        <div class="img-wrap">
+                                                            <img src="img/demo/video-thumb.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="video-item">
+                                                <a href="https://youtu.be/F5tSoaJ93ac" target="_blank" class="video-item-wrap">
+                                                    <div class="ratio ratio__16-9">
+                                                        <img src="img/play.svg" alt="" class="play-icon">
+                                                        <div class="img-wrap">
+                                                            <img src="img/demo/video-thumb.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="video-item">
+                                                <a href="https://youtu.be/F5tSoaJ93ac" target="_blank" class="video-item-wrap">
+                                                    <div class="ratio ratio__16-9">
+                                                        <img src="img/play.svg" alt="" class="play-icon">
+                                                        <div class="img-wrap">
+                                                            <img src="img/demo/video-thumb.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="pagination-wrap">
+                                            <ul>
+                                                <!-- 如果無法往前或往後請選擇disabled性質，或者直接隱藏。 -->
+                                                <li><a href="#!" class="nv pagination disabled"><span> ＜ </span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>1</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>2</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>3</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>4</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>5</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>6</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>7</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>8</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>9</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>10</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span> ＞ </span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="switch-nav-content" id="tabB">
+                                        <div class="img-item-section">
+                                            <div class="img-item">
+                                                <a href="#!" class="img-item-wrap modal-opener" tt-to="imgViewer">
+                                                    <div class="ratio ratio__16-9">
+                                                        <div class="img-wrap">
+                                                            <img src="https://www.upcomer.com/wp-content/uploads/2020/09/Valorant-Jett-3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="img-item">
+                                                <a href="#!" class="img-item-wrap modal-opener" tt-to="imgViewer">
+                                                    <div class="ratio ratio__16-9">
+                                                        <div class="img-wrap">
+                                                            <img src="https://www.upcomer.com/wp-content/uploads/2020/09/Valorant-Jett-3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="img-item">
+                                                <a href="#!" class="img-item-wrap modal-opener" tt-to="imgViewer">
+                                                    <div class="ratio ratio__16-9">
+                                                        <div class="img-wrap">
+                                                            <img src="https://www.upcomer.com/wp-content/uploads/2020/09/Valorant-Jett-3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="img-item">
+                                                <a href="#!" class="img-item-wrap modal-opener" tt-to="imgViewer">
+                                                    <div class="ratio ratio__16-9">
+                                                        <div class="img-wrap">
+                                                            <img src="https://www.upcomer.com/wp-content/uploads/2020/09/Valorant-Jett-3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="img-item">
+                                                <a href="#!" class="img-item-wrap modal-opener" tt-to="imgViewer">
+                                                    <div class="ratio ratio__16-9">
+                                                        <div class="img-wrap">
+                                                            <img src="https://www.upcomer.com/wp-content/uploads/2020/09/Valorant-Jett-3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="img-item">
+                                                <a href="#!" class="img-item-wrap modal-opener" tt-to="imgViewer">
+                                                    <div class="ratio ratio__16-9">
+                                                        <div class="img-wrap">
+                                                            <img src="https://www.upcomer.com/wp-content/uploads/2020/09/Valorant-Jett-3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="img-item">
+                                                <a href="#!" class="img-item-wrap modal-opener" tt-to="imgViewer">
+                                                    <div class="ratio ratio__16-9">
+                                                        <div class="img-wrap">
+                                                            <img src="https://www.upcomer.com/wp-content/uploads/2020/09/Valorant-Jett-3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="img-item">
+                                                <a href="#!" class="img-item-wrap modal-opener" tt-to="imgViewer">
+                                                    <div class="ratio ratio__16-9">
+                                                        <div class="img-wrap">
+                                                            <img src="https://www.upcomer.com/wp-content/uploads/2020/09/Valorant-Jett-3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                            <div class="img-item">
+                                                <a href="#!" class="img-item-wrap modal-opener" tt-to="imgViewer">
+                                                    <div class="ratio ratio__16-9">
+                                                        <div class="img-wrap">
+                                                            <img src="https://www.upcomer.com/wp-content/uploads/2020/09/Valorant-Jett-3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#!" class="primary-btn rwd modal-opener" tt-to="voteForm"><span>投票給他 ↑</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="pagination-wrap">
+                                            <ul>
+                                                <!-- 如果無法往前或往後請選擇disabled性質，或者直接隱藏。 -->
+                                                <li><a href="#!" class="nv pagination disabled"><span> ＜ </span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>1</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>2</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>3</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>4</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>5</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>6</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>7</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>8</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>9</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>10</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span> ＞ </span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="switch-nav-content" id="tabC">
+                                        <div class="arti-item-section">
+                                            <div class="arti-item">
+                                                <a href="https://game.udn.com/game/story/10449/4691722" class="arti-item-wrap" target="_blank">
+                                                    <img src="img/logos/vlr-logo-red-article.svg" alt="">
+                                                    <p class="arti-title">文章最多可以打二十個字作為標題哈哈哈哈哈</p>
+                                                </a>
+                                                <a href="#!" class="primary-btn arti modal-opener" tt-to="voteForm"><span>投票給他</span></a>
+                                            </div>
+                                            <div class="arti-item">
+                                                <a href="https://game.udn.com/game/story/10449/4691722" class="arti-item-wrap" target="_blank">
+                                                    <img src="img/logos/vlr-logo-red-article.svg" alt="">
+                                                    <p class="arti-title">文章最多可以打二十個字作為標題哈哈哈哈哈</p>
+                                                </a>
+                                                <a href="#!" class="primary-btn arti modal-opener" tt-to="voteForm"><span>投票給他</span></a>
+                                            </div>
+                                            <div class="arti-item">
+                                                <a href="https://game.udn.com/game/story/10449/4691722" class="arti-item-wrap" target="_blank">
+                                                    <img src="img/logos/vlr-logo-red-article.svg" alt="">
+                                                    <p class="arti-title">文章最多可以打二十個字作為標題哈哈哈哈哈</p>
+                                                </a>
+                                                <a href="#!" class="primary-btn arti modal-opener" tt-to="voteForm"><span>投票給他</span></a>
+                                            </div>
+                                            <div class="arti-item">
+                                                <a href="https://game.udn.com/game/story/10449/4691722" class="arti-item-wrap" target="_blank">
+                                                    <img src="img/logos/vlr-logo-red-article.svg" alt="">
+                                                    <p class="arti-title">文章最多可以打二十個字作為標題哈哈哈哈哈</p>
+                                                </a>
+                                                <a href="#!" class="primary-btn arti modal-opener" tt-to="voteForm"><span>投票給他</span></a>
+                                            </div>
+                                            <div class="arti-item">
+                                                <a href="https://game.udn.com/game/story/10449/4691722" class="arti-item-wrap" target="_blank">
+                                                    <img src="img/logos/vlr-logo-red-article.svg" alt="">
+                                                    <p class="arti-title">文章最多可以打二十個字作為標題哈哈哈哈哈</p>
+                                                </a>
+                                                <a href="#!" class="primary-btn arti modal-opener" tt-to="voteForm"><span>投票給他</span></a>
+                                            </div>
+                                            <div class="arti-item">
+                                                <a href="https://game.udn.com/game/story/10449/4691722" class="arti-item-wrap" target="_blank">
+                                                    <img src="img/logos/vlr-logo-red-article.svg" alt="">
+                                                    <p class="arti-title">文章最多可以打二十個字作為標題哈哈哈哈哈</p>
+                                                </a>
+                                                <a href="#!" class="primary-btn arti modal-opener" tt-to="voteForm"><span>投票給他</span></a>
+                                            </div>
+                                            <div class="arti-item">
+                                                <a href="https://game.udn.com/game/story/10449/4691722" class="arti-item-wrap" target="_blank">
+                                                    <img src="img/logos/vlr-logo-red-article.svg" alt="">
+                                                    <p class="arti-title">文章最多可以打二十個字作為標題哈哈哈哈哈</p>
+                                                </a>
+                                                <a href="#!" class="primary-btn arti modal-opener" tt-to="voteForm"><span>投票給他</span></a>
+                                            </div>
+                                            <div class="arti-item">
+                                                <a href="https://game.udn.com/game/story/10449/4691722" class="arti-item-wrap" target="_blank">
+                                                    <img src="img/logos/vlr-logo-red-article.svg" alt="">
+                                                    <p class="arti-title">文章最多可以打二十個字作為標題哈哈哈哈哈</p>
+                                                </a>
+                                                <a href="#!" class="primary-btn arti modal-opener" tt-to="voteForm"><span>投票給他</span></a>
+                                            </div>
+                                            <div class="arti-item">
+                                                <a href="https://game.udn.com/game/story/10449/4691722" class="arti-item-wrap" target="_blank">
+                                                    <img src="img/logos/vlr-logo-red-article.svg" alt="">
+                                                    <p class="arti-title">文章最多可以打二十個字作為標題哈哈哈哈哈</p>
+                                                </a>
+                                                <a href="#!" class="primary-btn arti modal-opener" tt-to="voteForm"><span>投票給他</span></a>
+                                            </div>
+                                            <div class="arti-item">
+                                                <a href="https://game.udn.com/game/story/10449/4691722" class="arti-item-wrap" target="_blank">
+                                                    <img src="img/logos/vlr-logo-red-article.svg" alt="">
+                                                    <p class="arti-title">文章最多可以打二十個字作為標題哈哈哈哈哈</p>
+                                                </a>
+                                                <a href="#!" class="primary-btn arti modal-opener" tt-to="voteForm"><span>投票給他</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="pagination-wrap">
+                                            <ul>
+                                                <!-- 如果無法往前或往後請選擇disabled性質，或者直接隱藏。 -->
+                                                <li><a href="#!" class="nv pagination disabled"><span> ＜ </span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>1</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>2</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>3</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>4</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>5</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>6</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>7</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>8</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>9</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span>10</span></a></li>
+                                                <li><a href="#!" class="nv pagination"><span> ＞ </span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 頁面錯誤 -->
+            <!-- <section class="section err">
+                <h1 class="err">發生錯誤，請稍候並刷新頁面</h1>
+            </section> -->
+        </div>
+        <footer>
+            <div class="footer-wrapper">
+                <div class="footer-container">
+                    <div class="footer-logos"><img src="img/logos/co-branding.svg" alt=""></div>
+                    <p class="copyright">
+                        ™ & © 2021 RIOT GAMES, INC,.《VALORANT特戰英豪》及其所有相關標誌、角色、
+                        名稱及特徵形象皆為RIOT GAMES,INC,. 專屬之財產。保留所有權利。
+                        通過下載、安裝和 / 或將Riot帳戶連接到特戰英豪遊戲軟體，
+                        即表示您同意台灣大哥大股份有限公司的「使用者合約」和「隱私權政策」。
+                    </p>
+                    <div class="footer-links-wrapper">
+                        <a href="" class="footer-link"><span>隱私權政策</span></a>
+                        <a href="" class="footer-link"><span>服務條款</span></a>
+                        <a href="" class="footer-link"><span>隱私權聲明</span></a>
+                    </div>
+                    <div class="sticker">
+                        <img src="img/logos/15+.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal voteMethod">
+        <div class="modal-container">
+            <div class="modal-closer modal-mask"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer modal-close-btn">
+                    <img src="img/close.svg" alt="">
+                </a>
+                <div class="modal-wrap">
+                    <div class="modal-header">
+                        <div class="modal-title">投票說明</div>
+                    </div>
+                    <div class="modal-body">
+                        <ol class="decimal">
+                            <li>每檔活動的每一個徵稿項目每人僅限投票一次。</li>
+                            <li>請務必確認填寫之聯絡資訊正確，如因得獎人帳號所提供、登錄的連絡電話、電子信箱有誤，造成本公司傳送訊息或電子郵件被退件，或因得獎人手機及電子信箱之設定致本公司之電子郵件被歸為垃圾郵件而被刪除或未讀取者，或得獎人因任何其他事由而未收受活動主辦單位之通知（包括但不限於得獎人之信箱滿信以致未收到信件、網路問題等），均由得獎人自負責任，視同無條件放棄得獎資格及一切相關權益。
+                            </li>
+                            <li>活動獎項之MyCard點數為《特戰英豪》專用點數。領取獎項須配合於期限內提供官方要求之相關文件及資料，如逾期未收到得獎人完整兌獎文件之資料，將視同得獎人無條件放棄得獎資格及一切相關權益。</li>
+                            <li>本活動參加、得獎、領獎資格或獎品不得轉讓予任何第三人，即無法進行取消、退換貨、亦不得要求轉換為現金或更換其他商品或權益，若不配合領獎程序者視同無條件放棄一切資格及相關權益。</li>
+                            <li>本公司有權檢視各參賽者之活動參與行為及得獎情形是否涉嫌例，包含但不限定於：人為操作、惡意灌票、蓄意偽造、多開（重）帳號、短時間異常多筆參與行為、透過任何電腦程式參與活動、以任何其他不正當的方式意圖以進行不實或虛偽活動參與行為，參賽者因上述情形所獲得之活動資格及獎項，本公司得一概取消之，並不另行通知。</li>
+                            <li>本活動各項辦法及規定，以活動網站公告及官方說明為準，且本公司擁有本活動隨時及最終保留、變更、修改、或撤回、取消獎項發送等之權利，若因遇不可抗力之 因素，本活動將有部分或全部暫停、延後舉辦或取消之權利。如有其他未盡事宜，本公司有權隨時補充或修正，並以最新公告為主。</li>
+                            <li>參加者於參加本活動之同時，即同意接受本活動之活動辦法與注意事項之規範，包含對其個人資料之蒐集、處理及利用，如不同意或有違反，應視為無參加資格，或本公司得取消其中獎資格，如因此有致生損害於本公司或其他任何第三人，本公司得向參加者請求損害賠償，參加者應負一切相關責任。</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal voteForm">
+        <div class="modal-container">
+            <div class="modal-closer modal-mask"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer modal-close-btn">
+                    <img src="img/close.svg" alt="">
+                </a>
+                <div class="modal-wrap">
+                    <div class="modal-header">
+                        <div class="modal-title">開始投票</div>
+                    </div>
+                    <div class="modal-body">
+                        <ol class="decimal">
+                            <li>每個Facebook帳號每日限投一票。</li>
+                            <li>投票時間自11/15(一)至11/28(日)23:59:59為止。</li>
+                            <li>填寫資料參加投票幸運抽獎，有機會得到MyCard點數500點，投票次數越多，中獎機率越高。</li>
+                            <li>活動獎項之MyCard點數為《特戰英豪》專用點數。領取獎項須配合於期限內提供官方要求之相關文件及資料，如逾期未收到得獎人完整兌獎文件之資料，將視同得獎人無條件放棄得獎資格及一切相關權益。</li>
+                            <li>其他規章請參照本活動辦法</li>
+                        </ol>
+                        <!-- 已登記的顯示在這裡 -->
+                        <!-- <p class="red">已登記：王大明 - 0900000000</p> -->
+                        <div class="input-item-wrap sm">
+                            <div class="input-title">姓名 <span class="red err-txt" style="display: inline-block;">格式錯誤</span></div>
+                            <input type="text" placeholder="王大明">
+                        </div>
+                        <div class="input-item-wrap sm">
+                            <div class="input-title">連絡電話（手機） <span class="red err-txt">格式錯誤</span></div>
+                            <input type="text" placeholder="0900000000">
+                        </div>
+                        <div class="confirm-section txt-left">
+                            <a href="#!" class="primary-btn primary-btn__red modal-opener modal-closer" tt-to="voteResult"><span>確定投票</span></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal voteResult">
+        <div class="modal-container">
+            <div class="modal-closer modal-mask"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer modal-close-btn">
+                    <img src="img/close.svg" alt="">
+                </a>
+                <div class="modal-wrap">
+                    <div class="modal-header">
+                        <div class="modal-title">投票結果 - 投票成功 / 失敗</div>
+                    </div>
+                    <div class="modal-body">
+                        <p>您本日已成功投票，明天再回來繼續支持您喜愛的創作者！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal imgViewer">
+        <div class="modal-container">
+            <div class="modal-closer modal-mask"></div>
+            <div class="modal-panel">
+                <a href="#!" class="modal-closer modal-close-btn">
+                    <img src="img/close.svg" alt="">
+                </a>
+                <div class="modal-wrap">
+                    <div class="modal-header">
+                        <div class="modal-title">作品內容</div>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://www.upcomer.com/wp-content/uploads/2020/09/Valorant-Jett-3.jpg" alt="">
+                    </div>
+                    <div class="confirm-section">
+                        <a href="#!" class="secondary-btn primary-btn__white-frame modal-closer"><span>取消</span></a>
+                        <a href="#!" class="primary-btn primary-btn__red modal-opener modal-closer" tt-to="voteForm"><span>確定投票</span></a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function() {
+            new WOW().init();
+            scrollTop();
+            navOpener();
+            modalFunction();
+            switcher();
+            customUpload();
+            setTimeout(function(){
+                console.log($('.section__kv').outerHeight())
+                $('html, body').animate({
+                    scrollTop: $('.section__kv').outerHeight()
+                }, 800);
+            },1200) 
+        });
+    </script>
+
+</body>
+
+</html>
